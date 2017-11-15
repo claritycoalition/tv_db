@@ -1,0 +1,4 @@
+#!/bin/bash
+D=`cat lastsave`
+mysql -uroot -p1q2w3e clarity < ${D}
+echo "Restored `cat lastsave`"

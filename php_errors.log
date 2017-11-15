@@ -1,0 +1,1778 @@
+[20-Oct-2017 21:33:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_() in /home/jw/src/clarity/V2/read.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V2/read.php on line 29
+[20-Oct-2017 21:34:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_() in /home/jw/src/clarity/V2/read.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V2/read.php on line 29
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: area in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 79
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: area_stats in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 83
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: entity in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 87
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: entity_service in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 91
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: product in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 95
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:22:09 UTC] PHP Notice:  Undefined variable: service in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 99
+[21-Oct-2017 19:22:09 UTC] PHP Stack trace:
+[21-Oct-2017 19:22:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V2/read.php:0
+[21-Oct-2017 19:22:09 UTC] PHP   2. DataMapper->screendump() /home/jw/src/clarity/V2/read.php:19
+[21-Oct-2017 19:47:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/jw/src/clarity/V2/lib/Class/DataMapper.class.php on line 128
+[23-Oct-2017 03:42:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method DataMapper::update_KgGdp_for_Area_And_Item() in /home/jw/src/clarity/V3/read.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V3/read.php on line 16
+[23-Oct-2017 05:31:30 UTC] PHP Notice:  Undefined index: entity_name in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 56
+[23-Oct-2017 05:31:30 UTC] PHP Stack trace:
+[23-Oct-2017 05:31:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[23-Oct-2017 05:31:30 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:19
+[23-Oct-2017 05:31:30 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 60
+[23-Oct-2017 05:31:30 UTC] PHP Stack trace:
+[23-Oct-2017 05:31:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[23-Oct-2017 05:31:30 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:19
+[23-Oct-2017 05:32:16 UTC] PHP Notice:  Undefined index: entity_name in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 57
+[23-Oct-2017 05:32:16 UTC] PHP Stack trace:
+[23-Oct-2017 05:32:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[23-Oct-2017 05:32:16 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:19
+[23-Oct-2017 05:32:16 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 61
+[23-Oct-2017 05:32:16 UTC] PHP Stack trace:
+[23-Oct-2017 05:32:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[23-Oct-2017 05:32:16 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:19
+[23-Oct-2017 05:32:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 61
+[23-Oct-2017 05:32:59 UTC] PHP Stack trace:
+[23-Oct-2017 05:32:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[23-Oct-2017 05:32:59 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:06:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:167
+Stack trace:
+#0 /home/jw/src/clarity/V3/read.php(17): DataMapper->update_KgGdp_for_Entity_item()
+#1 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 167
+[25-Oct-2017 20:29:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_t() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:330
+Stack trace:
+#0 /home/jw/src/clarity/V3/read.php(19): DataMapper->getTables('V3')
+#1 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 330
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:31:34 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 346
+[25-Oct-2017 20:31:34 UTC] PHP Stack trace:
+[25-Oct-2017 20:31:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:31:34 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:31:34 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:346
+[25-Oct-2017 20:33:22 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 354
+[25-Oct-2017 20:38:16 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:16 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:16 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:16 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:16 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:16 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:16 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:16 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:16 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:16 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:16 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:16 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:42 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:42 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:42 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:42 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:42 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:42 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:42 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:42 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:42 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:38:42 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:38:42 UTC] PHP Stack trace:
+[25-Oct-2017 20:38:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:38:42 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:39:06 UTC] PHP Notice:  Undefined index: Tables_in_clarity in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 300
+[25-Oct-2017 20:39:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:39:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:39:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:30 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:30 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:30 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:30 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:30 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:30 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:30 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:30 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:30 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:30 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:30 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:30 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:30 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:30 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:30 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:30 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:30 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:49 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:49 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:49 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:49 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:49 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:49 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:49 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:49 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:49 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:49 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:49 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:49 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:49 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:49 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:49 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:49 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:49 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:49 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:49 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:49 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:53 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:53 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:53 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:53 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:53 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:53 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:53 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:53 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:53 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:53 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:53 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:53 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:53 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:53 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:53 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:48:53 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 347
+[25-Oct-2017 20:48:53 UTC] PHP Stack trace:
+[25-Oct-2017 20:48:53 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:48:53 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:48:53 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:347
+[25-Oct-2017 20:51:13 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 349
+[25-Oct-2017 20:51:13 UTC] PHP Stack trace:
+[25-Oct-2017 20:51:13 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:51:13 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:51:13 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:349
+[25-Oct-2017 20:51:13 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 349
+[25-Oct-2017 20:51:13 UTC] PHP Stack trace:
+[25-Oct-2017 20:51:13 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:51:13 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:51:13 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:349
+[25-Oct-2017 20:51:13 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 349
+[25-Oct-2017 20:51:13 UTC] PHP Stack trace:
+[25-Oct-2017 20:51:13 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:51:13 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:51:13 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:349
+[25-Oct-2017 20:51:13 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 349
+[25-Oct-2017 20:51:13 UTC] PHP Stack trace:
+[25-Oct-2017 20:51:13 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:51:13 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:51:13 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:349
+[25-Oct-2017 20:53:45 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 356
+[25-Oct-2017 20:53:45 UTC] PHP Stack trace:
+[25-Oct-2017 20:53:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:53:45 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:53:45 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:356
+[25-Oct-2017 20:53:45 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 356
+[25-Oct-2017 20:53:45 UTC] PHP Stack trace:
+[25-Oct-2017 20:53:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:53:45 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:53:45 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:356
+[25-Oct-2017 20:53:45 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 356
+[25-Oct-2017 20:53:45 UTC] PHP Stack trace:
+[25-Oct-2017 20:53:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:53:45 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:53:45 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:356
+[25-Oct-2017 20:53:45 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 356
+[25-Oct-2017 20:53:45 UTC] PHP Stack trace:
+[25-Oct-2017 20:53:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:53:45 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:53:45 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:356
+[25-Oct-2017 20:54:20 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 357
+[25-Oct-2017 20:54:20 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:20 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:20 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:20 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:357
+[25-Oct-2017 20:54:20 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 357
+[25-Oct-2017 20:54:20 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:20 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:20 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:20 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:357
+[25-Oct-2017 20:54:20 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 357
+[25-Oct-2017 20:54:20 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:20 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:20 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:20 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:357
+[25-Oct-2017 20:54:20 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 357
+[25-Oct-2017 20:54:20 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:20 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:20 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:20 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:357
+[25-Oct-2017 20:54:44 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:54:44 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:44 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:44 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:44 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:54:44 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:54:44 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:44 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:44 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:44 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:54:44 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:54:44 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:44 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:44 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:44 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:54:44 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:54:44 UTC] PHP Stack trace:
+[25-Oct-2017 20:54:44 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:54:44 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:54:44 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:55:06 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:55:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:55:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:55:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:55:06 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:55:06 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:55:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:55:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:55:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:55:06 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:55:06 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:55:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:55:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:55:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:55:06 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[25-Oct-2017 20:55:06 UTC] PHP Warning:  vsprintf(): Too few arguments in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 358
+[25-Oct-2017 20:55:06 UTC] PHP Stack trace:
+[25-Oct-2017 20:55:06 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[25-Oct-2017 20:55:06 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:19
+[25-Oct-2017 20:55:06 UTC] PHP   3. vsprintf() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:358
+[26-Oct-2017 01:16:09 UTC] PHP Notice:  Undefined offset: 0 in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 234
+[26-Oct-2017 01:16:09 UTC] PHP Stack trace:
+[26-Oct-2017 01:16:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 01:16:09 UTC] PHP   2. DataMapper->update_KgGdp_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[26-Oct-2017 01:16:09 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/read.php on line 19
+[26-Oct-2017 01:16:09 UTC] PHP Stack trace:
+[26-Oct-2017 01:16:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 01:16:39 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/read.php on line 19
+[26-Oct-2017 01:16:39 UTC] PHP Stack trace:
+[26-Oct-2017 01:16:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 01:17:09 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/read.php on line 19
+[26-Oct-2017 01:17:09 UTC] PHP Stack trace:
+[26-Oct-2017 01:17:09 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:02:36 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:02:36 UTC] PHP Stack trace:
+[26-Oct-2017 02:02:36 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:02:36 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:02:36 UTC] PHP   3. require() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:2
+[26-Oct-2017 02:02:54 UTC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 2
+[26-Oct-2017 02:03:39 UTC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 3
+[26-Oct-2017 02:03:59 UTC] PHP Parse error:  syntax error, unexpected '"queries.php"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 3
+[26-Oct-2017 02:05:10 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:05:10 UTC] PHP Stack trace:
+[26-Oct-2017 02:05:10 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:05:10 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:05:10 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:3
+[26-Oct-2017 02:05:17 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:05:17 UTC] PHP Stack trace:
+[26-Oct-2017 02:05:17 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:05:17 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:05:17 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:3
+[26-Oct-2017 02:10:54 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 392
+[26-Oct-2017 02:10:54 UTC] PHP Stack trace:
+[26-Oct-2017 02:10:54 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:10:54 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:15:16 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 394
+[26-Oct-2017 02:15:16 UTC] PHP Stack trace:
+[26-Oct-2017 02:15:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:15:16 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:15:39 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:15:39 UTC] PHP Stack trace:
+[26-Oct-2017 02:15:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:15:39 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:15:39 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:4
+[26-Oct-2017 02:15:39 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 394
+[26-Oct-2017 02:15:39 UTC] PHP Stack trace:
+[26-Oct-2017 02:15:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:15:39 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:15:42 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:15:42 UTC] PHP Stack trace:
+[26-Oct-2017 02:15:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:15:42 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:15:42 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:4
+[26-Oct-2017 02:15:42 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 394
+[26-Oct-2017 02:15:42 UTC] PHP Stack trace:
+[26-Oct-2017 02:15:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:15:42 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:16:56 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:16:56 UTC] PHP Stack trace:
+[26-Oct-2017 02:16:56 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:16:56 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:16:56 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:4
+[26-Oct-2017 02:16:56 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 394
+[26-Oct-2017 02:16:56 UTC] PHP Stack trace:
+[26-Oct-2017 02:16:56 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:16:56 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:17:29 UTC] PHP Notice:  Undefined variable: table in /home/jw/src/clarity/V3/lib/Class/queries.php on line 4
+[26-Oct-2017 02:17:29 UTC] PHP Stack trace:
+[26-Oct-2017 02:17:29 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:17:29 UTC] PHP   2. require() /home/jw/src/clarity/V3/read.php:7
+[26-Oct-2017 02:17:29 UTC] PHP   3. include() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:3
+[26-Oct-2017 02:17:29 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 391
+[26-Oct-2017 02:17:29 UTC] PHP Stack trace:
+[26-Oct-2017 02:17:29 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:17:29 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:18:01 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 391
+[26-Oct-2017 02:18:01 UTC] PHP Stack trace:
+[26-Oct-2017 02:18:01 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:18:01 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:19:44 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 391
+[26-Oct-2017 02:19:44 UTC] PHP Stack trace:
+[26-Oct-2017 02:19:44 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:19:44 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:14
+[26-Oct-2017 02:29:02 UTC] PHP Warning:  require(queries.php): failed to open stream: No such file or directory in /home/jw/src/clarity/V3/read.php on line 8
+[26-Oct-2017 02:29:02 UTC] PHP Stack trace:
+[26-Oct-2017 02:29:02 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:29:02 UTC] PHP Fatal error:  require(): Failed opening required 'queries.php' (include_path='.:/usr/share/pear') in /home/jw/src/clarity/V3/read.php on line 8
+[26-Oct-2017 02:29:02 UTC] PHP Stack trace:
+[26-Oct-2017 02:29:02 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:29:42 UTC] PHP Warning:  require(lib/class/queries.php): failed to open stream: No such file or directory in /home/jw/src/clarity/V3/read.php on line 8
+[26-Oct-2017 02:29:42 UTC] PHP Stack trace:
+[26-Oct-2017 02:29:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:29:42 UTC] PHP Fatal error:  require(): Failed opening required 'lib/class/queries.php' (include_path='.:/usr/share/pear') in /home/jw/src/clarity/V3/read.php on line 8
+[26-Oct-2017 02:29:42 UTC] PHP Stack trace:
+[26-Oct-2017 02:29:42 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:30:07 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 390
+[26-Oct-2017 02:30:07 UTC] PHP Stack trace:
+[26-Oct-2017 02:30:07 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:30:07 UTC] PHP   2. DataMapper->getCols() /home/jw/src/clarity/V3/read.php:15
+[26-Oct-2017 02:34:41 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 411
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:37:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 448
+[26-Oct-2017 02:37:52 UTC] PHP Stack trace:
+[26-Oct-2017 02:37:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:37:52 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:38:59 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:38:59 UTC] PHP Stack trace:
+[26-Oct-2017 02:38:59 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:38:59 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:39:00 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 453
+[26-Oct-2017 02:39:00 UTC] PHP Stack trace:
+[26-Oct-2017 02:39:00 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:39:00 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/read.php:23
+[26-Oct-2017 02:43:55 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/read.php on line 20
+[26-Oct-2017 02:43:55 UTC] PHP Stack trace:
+[26-Oct-2017 02:43:55 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:45:15 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/read.php on line 20
+[26-Oct-2017 02:45:15 UTC] PHP Stack trace:
+[26-Oct-2017 02:45:15 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:46:55 UTC] PHP Notice:  Undefined variable: status in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 148
+[26-Oct-2017 02:46:55 UTC] PHP Stack trace:
+[26-Oct-2017 02:46:55 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:46:55 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:20
+[26-Oct-2017 02:53:16 UTC] PHP Notice:  Undefined variable: status in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 166
+[26-Oct-2017 02:53:16 UTC] PHP Stack trace:
+[26-Oct-2017 02:53:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:53:16 UTC] PHP   2. DataMapper->update_KgGdp_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[26-Oct-2017 02:53:16 UTC] PHP Warning:  A non-numeric value encountered in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 166
+[26-Oct-2017 02:53:16 UTC] PHP Stack trace:
+[26-Oct-2017 02:53:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:53:16 UTC] PHP   2. DataMapper->update_KgGdp_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[26-Oct-2017 02:53:16 UTC] PHP Notice:  Undefined variable: status in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 182
+[26-Oct-2017 02:53:16 UTC] PHP Stack trace:
+[26-Oct-2017 02:53:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[26-Oct-2017 02:53:16 UTC] PHP   2. DataMapper->update_KgGdp_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[13-Nov-2017 20:33:16 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 183
+[13-Nov-2017 20:33:16 UTC] PHP Stack trace:
+[13-Nov-2017 20:33:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[13-Nov-2017 20:33:16 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:00:21 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 483
+[14-Nov-2017 23:00:21 UTC] PHP Stack trace:
+[14-Nov-2017 23:00:21 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:00:21 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:17
+[14-Nov-2017 23:00:21 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:241
+[14-Nov-2017 23:34:22 UTC] PHP Fatal error:  Cannot use "self" when no class scope is active in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:34:22 UTC] PHP Stack trace:
+[14-Nov-2017 23:34:22 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:34:53 UTC] PHP Fatal error:  Cannot redeclare log() in /home/jw/src/clarity/V3/lib/functions.php on line 45
+[14-Nov-2017 23:34:53 UTC] PHP Stack trace:
+[14-Nov-2017 23:34:53 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:36:22 UTC] PHP Fatal error:  Cannot redeclare log() in /home/jw/src/clarity/V3/lib/functions.php on line 45
+[14-Nov-2017 23:36:22 UTC] PHP Stack trace:
+[14-Nov-2017 23:36:22 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:36:39 UTC] PHP Notice:  Undefined variable: q in /home/jw/src/clarity/V3/read.php on line 10
+[14-Nov-2017 23:36:39 UTC] PHP Stack trace:
+[14-Nov-2017 23:36:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:37:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DataMapper::__construct(), 0 passed in /home/jw/src/clarity/V3/read.php on line 11 and exactly 1 expected in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:11
+Stack trace:
+#0 /home/jw/src/clarity/V3/read.php(11): DataMapper->__construct()
+#1 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 11
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:34 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:34 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:34 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:34 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:34 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:34 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:34 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:34 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:34 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:34 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:175
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPp_for_Entity_item() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:176
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:21
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:200
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgPpYr_for_Entity_Item() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:201
+[14-Nov-2017 23:41:52 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:23
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:50
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:62
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:74
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:25
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:103
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:131
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:140
+[14-Nov-2017 23:41:52 UTC] PHP   4. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:141
+[14-Nov-2017 23:41:52 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:41:52 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:41:52 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:41:52 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:41:52 UTC] PHP Stack trace:
+[14-Nov-2017 23:41:52 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:41:52 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:27
+[14-Nov-2017 23:41:52 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:42:45 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:42:45 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:42:45 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:42:45 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:42:45 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:42:45 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:155
+[14-Nov-2017 23:42:45 UTC] PHP   4. DataMapper->debug() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:255
+[14-Nov-2017 23:42:45 UTC] PHP   5. R() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:412
+[14-Nov-2017 23:42:45 UTC] PHP   6. set() /home/jw/src/clarity/V3/lib/functions.php:49
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:42:45 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:42:45 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:42:45 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:42:45 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:42:45 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:42:45 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:42:45 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:42:45 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:64
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 37
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:42:45 UTC] PHP Notice:  Undefined variable: ANSI_CODES in /home/jw/src/clarity/V3/lib/functions.php on line 39
+[14-Nov-2017 23:42:45 UTC] PHP Stack trace:
+[14-Nov-2017 23:42:45 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:42:45 UTC] PHP   2. G() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:42:45 UTC] PHP   3. set() /home/jw/src/clarity/V3/lib/functions.php:54
+[14-Nov-2017 23:46:16 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 40
+[14-Nov-2017 23:46:16 UTC] PHP Stack trace:
+[14-Nov-2017 23:46:16 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:46:16 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:46:16 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:46:16 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:46:16 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:65
+[14-Nov-2017 23:46:56 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 40
+[14-Nov-2017 23:46:56 UTC] PHP Stack trace:
+[14-Nov-2017 23:46:56 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:46:56 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:46:56 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:46:56 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:46:56 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:65
+[14-Nov-2017 23:48:33 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 43
+[14-Nov-2017 23:48:33 UTC] PHP Stack trace:
+[14-Nov-2017 23:48:33 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:48:33 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:48:33 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:48:33 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:48:33 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:68
+[14-Nov-2017 23:50:38 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 42
+[14-Nov-2017 23:50:38 UTC] PHP Stack trace:
+[14-Nov-2017 23:50:38 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:50:38 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:50:38 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:50:38 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:50:38 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:67
+[14-Nov-2017 23:51:32 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 44
+[14-Nov-2017 23:51:32 UTC] PHP Stack trace:
+[14-Nov-2017 23:51:32 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:51:32 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:51:32 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:51:32 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:51:32 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:69
+[14-Nov-2017 23:53:11 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 49
+[14-Nov-2017 23:53:11 UTC] PHP Stack trace:
+[14-Nov-2017 23:53:11 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:53:11 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:53:11 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:53:11 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:53:11 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:74
+[14-Nov-2017 23:53:39 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 50
+[14-Nov-2017 23:53:39 UTC] PHP Stack trace:
+[14-Nov-2017 23:53:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:53:39 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:53:39 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:53:39 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:53:39 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:75
+[14-Nov-2017 23:55:39 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/functions.php on line 45
+[14-Nov-2017 23:55:39 UTC] PHP Stack trace:
+[14-Nov-2017 23:55:39 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[14-Nov-2017 23:55:39 UTC] PHP   2. DataMapper->update_KgVal_for_Entity_item() /home/jw/src/clarity/V3/read.php:19
+[14-Nov-2017 23:55:39 UTC] PHP   3. DataMapper->test() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:156
+[14-Nov-2017 23:55:39 UTC] PHP   4. C() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:247
+[14-Nov-2017 23:55:39 UTC] PHP   5. set() /home/jw/src/clarity/V3/lib/functions.php:70
+[15-Nov-2017 01:23:25 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/jw/src/clarity/V3/read.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V3/read.php on line 20
+[15-Nov-2017 01:23:39 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/jw/src/clarity/V3/read.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V3/read.php on line 20
+[15-Nov-2017 06:32:07 UTC] PHP Notice:  Use of undefined constant nulll - assumed 'nulll' in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 293
+[15-Nov-2017 06:32:07 UTC] PHP Stack trace:
+[15-Nov-2017 06:32:07 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 06:32:07 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:29
+[15-Nov-2017 06:32:07 UTC] PHP   3. DataMapper->select() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:51
+[15-Nov-2017 06:32:07 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 295
+[15-Nov-2017 06:32:07 UTC] PHP Stack trace:
+[15-Nov-2017 06:32:07 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 06:32:07 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:29
+[15-Nov-2017 06:32:07 UTC] PHP   3. DataMapper->select() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:51
+[15-Nov-2017 06:32:07 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 296
+[15-Nov-2017 06:32:07 UTC] PHP Stack trace:
+[15-Nov-2017 06:32:07 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 06:32:07 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:29
+[15-Nov-2017 06:32:07 UTC] PHP   3. DataMapper->select() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:51
+[15-Nov-2017 06:33:46 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 295
+[15-Nov-2017 06:33:46 UTC] PHP Stack trace:
+[15-Nov-2017 06:33:46 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 06:33:46 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:29
+[15-Nov-2017 06:33:46 UTC] PHP   3. DataMapper->select() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:51
+[15-Nov-2017 06:33:46 UTC] PHP Notice:  Undefined variable: sql in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 296
+[15-Nov-2017 06:33:46 UTC] PHP Stack trace:
+[15-Nov-2017 06:33:46 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 06:33:46 UTC] PHP   2. DataMapper->update_Entity_Service() /home/jw/src/clarity/V3/read.php:29
+[15-Nov-2017 06:33:46 UTC] PHP   3. DataMapper->select() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:51
+[15-Nov-2017 07:04:49 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 219
+[15-Nov-2017 20:31:19 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOException as array in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:511
+Stack trace:
+#0 /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php(270): DataMapper->update('DROP TABLE IF E...', 'update_KgVal_fo...')
+#1 /home/jw/src/clarity/V3/read.php(32): DataMapper->update_KgVal_for_svc_Entity_item('AVO')
+#2 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 511
+[15-Nov-2017 20:31:50 UTC] PHP Notice:  Undefined variable: xdebug_message in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 511
+[15-Nov-2017 20:31:50 UTC] PHP Stack trace:
+[15-Nov-2017 20:31:50 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 20:31:50 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:32
+[15-Nov-2017 20:31:50 UTC] PHP   3. DataMapper->update() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:270
+[15-Nov-2017 20:42:12 UTC] PHP Notice:  Undefined variable: sql2 in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 253
+[15-Nov-2017 20:42:12 UTC] PHP Stack trace:
+[15-Nov-2017 20:42:12 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 20:42:12 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:32
+[15-Nov-2017 20:42:12 UTC] PHP Notice:  Use of undefined constant EOX - assumed 'EOX' in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 267
+[15-Nov-2017 20:42:12 UTC] PHP Stack trace:
+[15-Nov-2017 20:42:12 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 20:42:12 UTC] PHP   2. DataMapper->update_KgVal_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:32
+[15-Nov-2017 21:44:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method DataMapper::update_KgVal_for_svc_Entity_item() in /home/jw/src/clarity/V3/read.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V3/read.php on line 38
+[15-Nov-2017 21:56:18 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function DataMapper::update_newdata_for_svc_Entity_item(), 0 passed in /home/jw/src/clarity/V3/read.php on line 44 and exactly 1 expected in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:86
+Stack trace:
+#0 /home/jw/src/clarity/V3/read.php(44): DataMapper->update_newdata_for_svc_Entity_item()
+#1 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 86
+[15-Nov-2017 22:57:18 UTC] PHP Notice:  Undefined variable: s in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 635
+[15-Nov-2017 22:57:18 UTC] PHP Stack trace:
+[15-Nov-2017 22:57:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 22:57:18 UTC] PHP   2. DataMapper->update_newdata_for_svc_Entity_item() /home/jw/src/clarity/V3/read.php:32
+[15-Nov-2017 22:57:18 UTC] PHP   3. DataMapper->delTable() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:274
+[15-Nov-2017 22:58:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function update_projections() in /home/jw/src/clarity/V3/read.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/jw/src/clarity/V3/read.php on line 50
