@@ -1,0 +1,11 @@
+#!/bin/bash
+
+find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
+php ./export.php
+find  /var/lib/mysql/clarity -name "*.csv"
+find  /var/lib/mysql/clarity -name "*.csv"|perl -p -e 's/\n/ /gmi'  >tmp
+rm test.xls 2> /dev/null
+ssconvert --merge-to test.xls  `cat tmp` 2> /dev/null
+zip -q -r clarity_database.zip  /var/lib/mysql/clarity 
+
+find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;

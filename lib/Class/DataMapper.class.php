@@ -1,39 +1,38 @@
 <?php
 
-
 class DataMapper {
 
+	private $pdo;
+	public $o;
+	private $query_method = PDO::FETCH_ASSOC;
+	private $q;
+	public $tcols=array();
 
-    private $pdo;
-    public $o;
-    private $query_method = PDO::FETCH_ASSOC;
-    private $q;
-    public function __construct() {
-        try {
-            $dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'root', '1q2w3e');
-            $this->pdo = $dbh;
-            $this->o = $dbh;
-            $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-            $sql = "flush privileges";
-            $stmt = $this->pdo->prepare($sql);
-            $sql = "flush tables";
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-        } catch (PDOException $e) {
-            var_dump($e);
-        }
-    }
+	public function __construct() {
+		try {
+			$dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'root', '1q2w3e');
+			$this->pdo = $dbh;
+			$this->o = $dbh;
+			$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+			$sql = "flush privileges";
+			$stmt = $this->pdo->prepare($sql);
+			$sql = "flush tables";
+			$stmt = $this->pdo->prepare($sql);
+			$stmt->execute();
+		} catch (PDOException $e) {
+			var_dump($e);
+		}
+	}
 
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
 
-    /**********************************************************
-     * 
-     *********************************************************/
-
-    public function update_Entity_Service() {
-        $r;
-        $status = "";
-        $sql = <<<EOX
+	public function update_Entity_Service() {
+		$r;
+		$status = "";
+		$sql = <<<EOX
             SELECT
             V3_entity_item.entity,
             V3_entity_service.service_name,
@@ -47,51 +46,52 @@ class DataMapper {
 
                 
 EOX;
-        $this->debug($sql,"update_Entity_Service");
-        $r = $this->select($sql);
+		$this->debug($sql, "update_Entity_Service");
+		$r = $this->select($sql);
 
-        $en = $r[0]['entity'];
-        $sn = $r[0]['service_name'];
-        $t = $r[0]['c_tot_kg'];
+		$en = $r[0]['entity'];
+		$sn = $r[0]['service_name'];
+		$t = $r[0]['c_tot_kg'];
 
-        $sql = <<<EOX
+		$sql = <<<EOX
             UPDATE V3_entity_service  set c_tot_kg = ${t} 
             WHERE  entity_name ='${en}' and service_name = '${sn}'
 EOX;
-            
-        $r = $this->update($sql,"update_Entity_Service");
-        $this->test("select c_tot_kg from  V3_entity_service" ); 
 
-        $status .= "QUERYING [V3_entity_service :: for c_*\n";
-        $status .= "\tUPDATED [ :: c_tot_kg\n";
-        
-        $sql = <<<EOX
+		$r = $this->update($sql, "update_Entity_Service");
+		$this->test("select c_tot_kg from  V3_entity_service");
+
+		$status .= "QUERYING [V3_entity_service :: for c_*\n";
+		$status .= "\tUPDATED [ :: c_tot_kg\n";
+
+		$sql = <<<EOX
         update V3_entity_service set 
             c_kg_per_client =  (V3_entity_service.c_tot_kg /V3_entity_service.unique_pop),
             c_kg_per_event = (V3_entity_service.c_tot_kg /V3_entity_service.returning),
             c_kg_per_meal = (V3_entity_service.c_tot_kg /(V3_entity_service.returning * V3_entity_service.unique_pop))
 EOX;
-        
-        $r = $this->update($sql,"update_Entity_Service");
-        $this->test("select c_kg_per_client,c_kg_per_event,c_kg_per_meal from  V3_entity_service" ); 
 
-        $status .= "\tUPDATED [ :: c_*\n";
+		$r = $this->update($sql, "update_Entity_Service");
+		$this->test("select c_kg_per_client,c_kg_per_event,c_kg_per_meal from  V3_entity_service");
 
-        return($status);
-    }
+		$status .= "\tUPDATED [ :: c_*\n";
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_newdata_for_svc_Entity_item($item) {
-        $status = "";
-        $r=null;
+		return($status);
+	}
 
-		/*************************************/
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_newdata_for_svc_Entity_item($item) {
+		$status = "";
+		$r = null;
+
+		/*		 * ********************************** */
 		/*        kg_yr                      */
-		/*************************************/		
+		/*		 * ********************************** */
 
-		$sql =<<<EOX
+		$sql = <<<EOX
             update V3_entity_item,V3_entity_service set
             V3_entity_item.kg_yr = (
             SELECT
@@ -107,17 +107,17 @@ EOX;
             V3_entity_item.item = '${item}'
                 
 EOX;
-                
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select kg_yr from V3_entity_item" ); 
-        
-        $status .= "UPDATED [kg_yr]  [V3_entity_item]\n";
-        
-		/*************************************/
+
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select kg_yr from V3_entity_item");
+
+		$status .= "UPDATED [kg_yr]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
 		/*        c_kg_svc_single            */
-		/*************************************/		
-        
-		$sql =<<<EOX
+		/*		 * ********************************** */
+
+		$sql = <<<EOX
             update V3_entity_item,V3_entity_service set
             V3_entity_item.c_kg_svc_single = (
                 SELECT
@@ -133,17 +133,17 @@ EOX;
             V3_entity_item.item = '${item}'
                 
 EOX;
-                
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_svc_single from V3_entity_item" ); 
-                
-        $status .= "UPDATED [c_kg_svc_single]  [V3_entity_item]\n";
 
-		/*************************************/
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select c_kg_svc_single from V3_entity_item");
+
+		$status .= "UPDATED [c_kg_svc_single]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
 		/*        c_kg_svc_yr                */
-		/*************************************/		
+		/*		 * ********************************** */
 
-		$sql =<<<EOX
+		$sql = <<<EOX
             update V3_entity_item,V3_entity_service set
             V3_entity_item.c_kg_svc_yr = (
                 SELECT
@@ -159,17 +159,17 @@ EOX;
             V3_entity_item.item = '${item}'
                 
 EOX;
-                
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_svc_yr from V3_entity_item" ); 
-        
-        $status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
-        		
-		/*************************************/
+
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select c_kg_svc_yr from V3_entity_item");
+
+		$status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
 		/*        c_kg_pp_yr                 */
-		/*************************************/		
-        
-		$sql =<<<EOX
+		/*		 * ********************************** */
+
+		$sql = <<<EOX
             update V3_entity_item,V3_entity_service set
             V3_entity_item.c_kg_pp_yr = (
                 SELECT
@@ -185,17 +185,17 @@ EOX;
             V3_entity_item.item = '${item}'
                 
 EOX;
-                
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_pp_yr from V3_entity_item" ); 
-        
-        $status .= "UPDATED [c_kg_pp_yr]  [V3_entity_item]\n";
-        
-		/*************************************/
-		/*        gdp                        */
-		/*************************************/		
 
-		$sql=<<<EOX
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select c_kg_pp_yr from V3_entity_item");
+
+		$status .= "UPDATED [c_kg_pp_yr]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
+		/*        gdp                        */
+		/*		 * ********************************** */
+
+		$sql = <<<EOX
             select V3_entity_item.c_kg_val
             FROM
                 V3_entity_item
@@ -204,45 +204,45 @@ EOX;
                 V3_entity_item.`year` =  '2014' 
                 AND V3_entity_item.item =  '${item}'
 EOX;
-        $status .= "\tQUERYING [V3_entity_item for ARGNAT...]\n";
-        
-        $r = $this->select($sql,"update_newdata_for_svc_Entity_item");
-        $nat_kg_gdp = $r[0]['c_kg_val'];
+		$status .= "\tQUERYING [V3_entity_item for ARGNAT...]\n";
+
+		$r = $this->select($sql, "update_newdata_for_svc_Entity_item");
+		$nat_kg_gdp = $r[0]['c_kg_val'];
 
 
-		$sql=<<<EOX
+		$sql = <<<EOX
             UPDATE V3_entity_item SET gdp = kg_yr * ${nat_kg_gdp} 
             WHERE
                 V3_entity_item.entity =  'ECOCHE' AND
                 V3_entity_item.`year` =  '2014' 
                 AND V3_entity_item.item =  '${item}'
 EOX;
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select kg_yr, '*', '${nat_kg_gdp}', gdp from V3_entity_item" ); 
-        
-        $status .= "UPDATED [gdp]  [V3_entity_item]\n";
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select kg_yr, '*', '${nat_kg_gdp}', gdp from V3_entity_item");
 
-		/*************************************/
+		$status .= "UPDATED [gdp]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
 		/*        c_kg_val                   */
-		/*************************************/		
+		/*		 * ********************************** */
 
-        $sql=<<<EOX
+		$sql = <<<EOX
             UPDATE V3_entity_item SET c_kg_val = gdp/kg_yr
             WHERE
                 V3_entity_item.entity =  'ECOCHE' AND
                 V3_entity_item.`year` =  '2014' 
                 AND V3_entity_item.item =  '${item}'
 EOX;
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select 'X3',gdp,'/',kg_yr, c_kg_val from V3_entity_item" ); 
-        
-        $status .= "UPDATED [c_kg_val]  [V3_entity_item]\n";
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select 'X3',gdp,'/',kg_yr, c_kg_val from V3_entity_item");
 
-		/*************************************/
+		$status .= "UPDATED [c_kg_val]  [V3_entity_item]\n";
+
+		/*		 * ********************************** */
 		/*        c_gdp_pp_yr                */
-		/*************************************/	
-		
-        $sql1=<<<EOX
+		/*		 * ********************************** */
+
+		$sql1 = <<<EOX
 			CREATE TABLE tmp AS (SELECT
 				V3_entity_item.gdp/V3_entity_stats.pop AS c_gdp_pp_yr,
 				V3_entity_stats.pop,
@@ -259,7 +259,7 @@ EOX;
 				V3_entity_item.`year` =  '2014')
 	
 EOX;
-        $sql2=<<<EOX
+		$sql2 = <<<EOX
 			UPDATE V3_entity_item SET c_gdp_pp_yr = (
 				SELECT c_gdp_pp_yr FROM tmp 
 				WHERE
@@ -270,20 +270,20 @@ EOX;
 				V3_entity_item.`year` =  '2014' AND
 				V3_entity_item.item =  '${item}';
 EOX;
-                
-        $r = $this->delTable("tmp");
-        $r = $this->update($sql1,"update_newdata_for_svc_Entity_item");
-        $r = $this->update($sql2,"update_newdata_for_svc_Entity_item");
-        $this->test("select c_gdp_pp_yr from V3_entity_item" ); 
-        
-        $status .= "UPDATED [c_gdp_pp_yur]  [V3_entity_item]\n";
-        
 
-		/*************************************/
+		$r = $this->delTable("tmp");
+		$r = $this->update($sql1, "update_newdata_for_svc_Entity_item");
+		$r = $this->update($sql2, "update_newdata_for_svc_Entity_item");
+		$this->test("select c_gdp_pp_yr from V3_entity_item");
+
+		$status .= "UPDATED [c_gdp_pp_yur]  [V3_entity_item]\n";
+
+
+		/*		 * ********************************** */
 		/*        c_kg_meal                */
-		/*************************************/	
-		
-        $sql=<<<EOX
+		/*		 * ********************************** */
+
+		$sql = <<<EOX
             SELECT DISTINCT
             V3_service_stats.kg/V3_entity_service.meals_pp AS c_kg_meal
             FROM
@@ -294,23 +294,23 @@ EOX;
             V3_entity_item.item =  '${item}' AND
             V3_entity_item.entity =  'ECOCHE'
 EOX;
-        $r = $this->select($sql,"update_KgVal_for_svc_Entity_item");
-        $c_kg_meal = $r[0]['c_kg_meal'];
+		$r = $this->select($sql, "update_KgVal_for_svc_Entity_item");
+		$c_kg_meal = $r[0]['c_kg_meal'];
 
-        $sql=<<<EOX
+		$sql = <<<EOX
             update V3_service_item set 
                 c_kg_pp_meal = ${c_kg_meal} 
             WHERE
                 V3_service_item.item =  '${item}' AND
                 V3_service_item.service_name =  'ECOMEAL'
 EOX;
-        $r = $this->update($sql,"update_KgVal_for_svc_Entity_item");
-        $this->test("select * from V3_service_item" ); 
+		$r = $this->update($sql, "update_KgVal_for_svc_Entity_item");
+		$this->test("select * from V3_service_item");
 
-        $status .= "\tUPDATING [V3_service_item ...]\n";
-        
+		$status .= "\tUPDATING [V3_service_item ...]\n";
 
-/*******************************************************************/
+
+		/*		 * **************************************************************** */
 //        $sql = <<<EOX
 //        UPDATE V3_entity_item V3_entity_item1
 //            INNER JOIN V3_entity_item   ON  V3_entity_item.entity = V3_entity_item1.entity  
@@ -330,7 +330,7 @@ EOX;
 //        $status .= "\tonly updates ${item}\n";
 //        
 //        exit;
-/*******************************************************************/
+		/*		 * **************************************************************** */
 //        $sql=<<<EOX
 //            drop table if exists _tmp;
 //            create table _tmp as 
@@ -362,7 +362,7 @@ EOX;
 //
 //        $status .= "\tUPDATING [V3_service_item ...]\n";
 //        $status .= "\tUPDATED [V3_entity_item :: gdp/c_kp_pp for ECOCHE/2014/AVO\n";
-        /*******************************************************************/
+		/*		 * **************************************************************** */
 //        $sql=<<<EOX
 //            drop table if exists _tmp;
 //            create table _tmp as 
@@ -397,27 +397,29 @@ EOX;
 
 
 
-        return($status);
-    }
-    
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_KG_VAL_for_Entity_item() {
-        $sql = "UPDATE V3_entity_item set c_kg_val = V3_entity_item.gdp / V3_entity_item.kg_yr";
+		return($status);
+	}
 
-        $r = $this->update($sql,"update_KG_VAL_for_Entity_item");
-        $this->test("select V3_entity_item.gdp, '/', V3_entity_item.kg_yr, c_kg_val from V3_entity_item" );
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
 
-        $status = "UPDATED [V3_entity_item :: c_kg_val]\n";
-        return($status);
-    }
+	public function update_KG_VAL_for_Entity_item() {
+		$sql = "UPDATE V3_entity_item set c_kg_val = V3_entity_item.gdp / V3_entity_item.kg_yr";
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_GPD_PP_YR_for_Entity_item() {
-        $sql = <<<EOX
+		$r = $this->update($sql, "update_KG_VAL_for_Entity_item");
+		$this->test("select V3_entity_item.gdp, '/', V3_entity_item.kg_yr, c_kg_val from V3_entity_item");
+
+		$status = "UPDATED [V3_entity_item :: c_kg_val]\n";
+		return($status);
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_GPD_PP_YR_for_Entity_item() {
+		$sql = <<<EOX
                 UPDATE V3_entity_item as a, V3_entity_stats as b 
                     set a.c_gdp_pp_yr = (SELECT a.gdp/b.pop 
                                         where a.entity = b.entity AND 
@@ -425,20 +427,21 @@ EOX;
                                      )
 EOX;
 
-        $r = $this->update($sql,"update_GPD_PP_YR_for_Entity_item");
-        $this->test("SELECT a.gdp,'/',b.pop,(a.gdp/b.pop) as c_gdp_pp_yr from V3_entity_item as a, V3_entity_stats as b where a.entity = b.entity AND  a.year = b.year" );
+		$r = $this->update($sql, "update_GPD_PP_YR_for_Entity_item");
+		$this->test("SELECT a.gdp,'/',b.pop,(a.gdp/b.pop) as c_gdp_pp_yr from V3_entity_item as a, V3_entity_stats as b where a.entity = b.entity AND  a.year = b.year");
 
-        
-        $status = "UPDATED [V3_entity_item :: c_gdp_pp_yr]\n";
-        $status .= "\tonly updates ARGNAT entries bc ECO has no GDP\n";
-        return($status);
-    }
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_Entity_Stats() {
-        $sql = <<<EOX
+		$status = "UPDATED [V3_entity_item :: c_gdp_pp_yr]\n";
+		$status .= "\tonly updates ARGNAT entries bc ECO has no GDP\n";
+		return($status);
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_Entity_Stats() {
+		$sql = <<<EOX
 			UPDATE V3_entity_stats set gdp = (
 			SELECT DISTINCT
 			Sum(V3_entity_item.gdp) as tot_gdp
@@ -456,23 +459,20 @@ EOX;
 			V3_entity_stats.`year`='2014'
 EOX;
 
-        $r = $this->update($sql,"update_Entity_Stats");
-        $this->test("SELECT * form V3_entiry_stats" );
+		$r = $this->update($sql, "update_Entity_Stats");
+		$this->test("SELECT * form V3_entiry_stats");
 
-        
-        $status = "UPDATED [gdp]     [V3_entity_stats]\n";
-        return($status);
-    }
 
-	
-	
-	
-	
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_ARGENT_data_for_Entity_item() {
-		$sql =<<<EOX
+		$status = "UPDATED [gdp]     [V3_entity_stats]\n";
+		return($status);
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_ARGENT_data_for_Entity_item() {
+		$sql = <<<EOX
             update V3_entity_item,V3_entity_service set
             V3_entity_item.c_kg_svc_yr = (
                 SELECT
@@ -488,20 +488,21 @@ EOX;
             V3_entity_item.item = '${item}'
                 
 EOX;
-                
-        $r = $this->update($sql,"update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_svc_yr from V3_entity_item" ); 
-        
-        $status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
-    
-        return($status);
-    }
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_KG_PP_YR_for_Entity_Item() {
-        $sql = <<<EOX
+		$r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+		$this->test("select c_kg_svc_yr from V3_entity_item");
+
+		$status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
+
+		return($status);
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_KG_PP_YR_for_Entity_Item() {
+		$sql = <<<EOX
             UPDATE V3_entity_item 
             Inner Join 
                 V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity
@@ -513,18 +514,21 @@ EOX;
             SET 
                 c_kg_pp_yr = (V3_entity_item.kg_yr/V3_entity_stats.pop)
 EOX;
-        $r = $this->update($sql,"update_KG_PP_YR_for_Entity_Item");
-        $this->test("select V3_entity_item.kg_yr,'/',V3_entity_stats.pop,c_gdp_pp_yr FROM V3_entity_item Inner Join V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity" );  //JWX dup?
-        
-        
-        $status= "UPDATED [V3_entity_item :: c_kg_pp_yr]\n";
-        $status.= "\tAll entity_items processes\n";
-        return($status);
-    }    /**********************************************************
-     * 
-     *********************************************************/
-    public function update_projections() {
-        $sql = <<<EOX
+		$r = $this->update($sql, "update_KG_PP_YR_for_Entity_Item");
+		$this->test("select V3_entity_item.kg_yr,'/',V3_entity_stats.pop,c_gdp_pp_yr FROM V3_entity_item Inner Join V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity");  //JWX dup?
+
+
+		$status = "UPDATED [V3_entity_item :: c_kg_pp_yr]\n";
+		$status .= "\tAll entity_items processes\n";
+		return($status);
+	}
+
+/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function update_projections() {
+		$sql = <<<EOX
 			create table V3_pre_proj3
 
 			SELECT
@@ -576,226 +580,309 @@ EOX;
 			V3_entity_stats.entity =  'ARGNAT'
 EOX;
 		$this->delTable("V3_pre_proj3");
-        $r = $this->update($sql,"update_KG_PP_YR_for_Entity_Item");
-        $this->test("select V3_entity_item.kg_yr,'/',V3_entity_stats.pop,c_gdp_pp_yr FROM V3_entity_item Inner Join V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity" );  //JWX dup?
-        
-        
-        $status= "UPDATED projections\n";
-        return($status);
-    }
-
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function getAllData($table) {
-        $sql = "select * from ${table}";
-        return($this->select($sql));
-    }
+		$r = $this->update($sql, "update_KG_PP_YR_for_Entity_Item");
+		$this->test("select V3_entity_item.kg_yr,'/',V3_entity_stats.pop,c_gdp_pp_yr FROM V3_entity_item Inner Join V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity");  //JWX dup?
 
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function execute($sql) {
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-            return($stmt->fetchAll($this->query_method));
-        } catch (PDOException $e) {
-            var_dump($e);
-        }
-    }
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function select($sql,$title=null) {
-        try {
-            $this->debug($sql,$title);
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-            return($stmt->fetchAll($this->query_method));
-        } catch (PDOException $e) {
-            var_dump($e);
-        }
-    }
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function test($sql) {
-        $out = `mysql -u root -p1q2w3e -t clarity -e "${sql}"` ;
-        print(C($out));
-        $out = `mysql -u root -p1q2w3e -t clarity -e "select * from V3_entity_item"` ;
-        print(M($out));
-        
-    }
-    /**********************************************************
-     * 
-     *********************************************************/
+		$status = "UPDATED projections\n";
+		return($status);
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function getAllData($table) {
+		$sql = "select * from ${table}";
+		return($this->select($sql));
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function execute($sql) {
+		try {
+			$stmt = $this->pdo->prepare($sql);
+			$stmt->execute();
+			return($stmt->fetchAll($this->query_method));
+		} catch (PDOException $e) {
+			var_dump($e);
+		}
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function select($sql, $title = null) {
+		try {
+			$this->debug($sql, $title);
+			$stmt = $this->pdo->prepare($sql);
+			$stmt->execute();
+			return($stmt->fetchAll($this->query_method));
+		} catch (PDOException $e) {
+			var_dump($e);
+		}
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function test($sql) {
+		$out = `mysql -u root -p1q2w3e -t clarity -e "${sql}"`;
+		print(C($out));
+		$out = `mysql -u root -p1q2w3e -t clarity -e "select * from V3_entity_item"`;
+		print(M($out));
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
 	public function delTable($t) {
 		$r = $this->update("DROP TABLE IF EXISTS $t");
 		return($r);
 	}
-	
-    public function update($sql,$title=null) {
-        try {
-            $this->debug($sql,$title);
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-            return(1);
-        } catch (PDOException $e) {
-            print_r($e->xdebug_message);
-            exit;
-        }
-    }
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function getCols($table) {
-        $sql = <<<EOX
+	public function update($sql, $title = null) {
+		try {
+			$this->debug($sql, $title);
+			$stmt = $this->pdo->prepare($sql);
+			$stmt->execute();
+			return(1);
+		} catch (PDOException $e) {
+			print_r($e->xdebug_message);
+			exit;
+		}
+	}
+
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function getCols($table) {
+		$sql = <<<EOX
             SELECT `COLUMN_NAME` 
             FROM `INFORMATION_SCHEMA`.`COLUMNS` 
             WHERE `TABLE_SCHEMA`='clarity' 
             AND `TABLE_NAME`='${table}';
 EOX;
-            return($this->select($sql));
-        
-    }
+		return($this->select($sql));
+	}
 
-    
-    
-    
-    public function selectColumn($sql) {
-        $r;
-        try {
-            $stmt = $this->pdo->prepare($sql);
-            $stmt->execute();
-            $r = $stmt->fetchColumn(); //   ->fetchAll($this->query_method);
-        } catch (PDOException $e) {
-            var_dump($sql);
-            var_dump($e);
-        }
-        return($r);
-    }
+	public function selectColumn($sql) {
+		$r;
+		try {
+			$stmt = $this->pdo->prepare($sql);
+			$stmt->execute();
+			$r = $stmt->fetchColumn(); //   ->fetchAll($this->query_method);
+		} catch (PDOException $e) {
+			var_dump($sql);
+			var_dump($e);
+		}
+		return($r);
+	}
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function getColMaxLen($tname, $cname) {
-        $r = null;
-        $sql = "select max(length(`${cname}`)) from ${tname} as len";
-        $r = $this->selectColumn($sql);
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function getColMaxLen($tname, $cname) {
+		$r = null;
+		$sql = "select max(length(`${cname}`)) from ${tname} as len";
+		$r = $this->selectColumn($sql);
 
 
-        return( ($r < strlen($cname) ? strlen($cname) : $r) );
-    }
+		return( ($r < strlen($cname) ? strlen($cname) : $r) );
+	}
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    private function drawline($l) {
-        $line = "";
-        for ($i = 0; $i < $l; $i++) {
-            $line .= "-";
-        }
-        return($line);
-    }
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function getTables($pre) {
+	private function drawline($l) {
+		$line = "";
+		for ($i = 0; $i < $l; $i++) {
+			$line .= "-";
+		}
+		return($line);
+	}
 
-        $out = "";
-        $r = null;
-        try {
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
+
+	public function getTables($pre) {
+
+		$out = "";
+		$r = null;
+		try {
 //            $stmt = $this->pdo->prepare("SELECT TABLE_NAME as Tables_in_clarity FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'clarity' and TABLE_NAME = 'V3_entity'");
-            $stmt = $this->pdo->prepare("SELECT TABLE_NAME as Tables_in_clarity FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'clarity' and TABLE_NAME like 'V3_%'");
-            $stmt->execute();
-            $r = $stmt->fetchAll($this->query_method);
-        } catch (PDOException $e) {
-            var_dump($e);
-        }
-        $o = array();
-        foreach ($r as $tbl => $name) {
-            $n = $name['Tables_in_clarity'];
-            $p = strstr($n, $pre);
-            if ($p) {
-                array_push($o, $n);
-            }
-        }
-        foreach ($o as $table) {
-            $mask = "";
-            $cnameAry = array();
-            $cols = $this->getCols($table);
+			$stmt = $this->pdo->prepare("SELECT TABLE_NAME as Tables_in_clarity FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'clarity' and TABLE_NAME like 'V3_%'");
+			$stmt->execute();
+			$r = $stmt->fetchAll($this->query_method);
+		} catch (PDOException $e) {
+			var_dump($e);
+		}
+		$o = array();
+		foreach ($r as $tbl => $name) {
+			$n = $name['Tables_in_clarity'];
+			$p = strstr($n, $pre);
+			if ($p) {
+				array_push($o, $n);
+			}
+		}
+		foreach ($o as $table) {
+			$this->tcols[$table]=array();
+			$mask = "";
+			$cnameAry = array();
+			$cols = $this->getCols($table);
 
-            /* make the mask */
+			/* make the mask */
 
-            foreach ($cols as $c) {
-                $cname = $c['COLUMN_NAME'];
-                $cl = $this->getColMaxLen($table, $cname);
-                $mask .= "| %${cl}s ";
-                array_push($cnameAry, $cname);
-            }
+			foreach ($cols as $c) {
+				$cname = $c['COLUMN_NAME'];
+				$cl = $this->getColMaxLen($table, $cname);
+				$mask .= "| %${cl}s ";
+				array_push($cnameAry, $cname);
+			}
+			array_push($this->tcols[$table],$cnameAry);
 
-            /* make the header */
 
-            $header = vsprintf($mask, $cnameAry) . "|\n";
+			$this->export($table);
 
-            /* make the data */
 
-            $cdataAry = array();
-            $td = $this->getAllData($table);
+			/* make the header */
 
-            $rows = array();
+			$header = vsprintf($mask, $cnameAry) . "|\n";
 
-            foreach ($td as $entry) {
-                foreach ($entry as $cname => $cdata) {
-                    array_push($cdataAry, $cdata);
-                }
-                array_push($rows, $cdataAry);
-                $cdataAry = array();
-            }
+			/* make the data */
+
+			$cdataAry = array();
+			$td = $this->getAllData($table);
+
+			$rows = array();
+
+			foreach ($td as $entry) {
+				foreach ($entry as $cname => $cdata) {
+					array_push($cdataAry, $cdata);
+				}
+				array_push($rows, $cdataAry);
+				$cdataAry = array();
+			}
 //            var_export($rows);
 
-            /* print the header */
+			/* print the header */
 
-            $out .= R("[" . strtoupper($table) . "]\n");
-            $out .= $this->drawline(strlen($header)) . "\n";
-            $out .= G("$header");
-            $out .= $this->drawline(strlen($header)) . "\n";
+			$out .= R("[" . strtoupper($table) . "]\n");
+			$out .= $this->drawline(strlen($header)) . "\n";
+			$out .= G("$header");
+			$out .= $this->drawline(strlen($header)) . "\n";
 
-            /* print the data */
+			/* print the data */
 
-            foreach ($rows as $cd) {
+			foreach ($rows as $cd) {
 //                var_dump($row);
-  //              foreach ($row as $cd) {
-    //            var_dump($cd);
-                    $out .= B(vsprintf($mask, $cd)) . "|\n";
-      //          }
-            }
-            $out .= $this->drawline(strlen($header)) . "\n";
+				//              foreach ($row as $cd) {
+				//            var_dump($cd);
+				$out .= B(vsprintf($mask, $cd)) . "|\n";
+				//          }
+			}
+			$out .= $this->drawline(strlen($header)) . "\n";
 
-            $out .= ("\n\n\n");
-        }
+			$out .= ("\n\n\n");
+		}
 
 
 //        print_r($r);
-        return($out);
-    }
+		return($out);
+	}
 
-    /**********************************************************
-     * 
-     *********************************************************/
-    public function close() {
-        $dbh = null;
-    }
-    public function debug($s,$title=null) {
-        $r  = "\n";
-        $r .= "[$title]\n$s\n";
-        print R($r);
-        return;
-    }
+	/*	 * ********************************************************
+	 * 
+	 * ******************************************************* */
 
-    
+	public function close() {
+		$dbh = null;
+	}
+
+	public function debug($s, $title = null) {
+		$r = "\n";
+		$r .= "[$title]\n$s\n";
+		print R($r);
+		return;
+	}
+
+	/*	 * ********************************** */
+	/*                                   */
+	/*	 * ********************************** */
+
+	
+	
+	public function export($table) {
+//		print_r($this->tcols);
+		
+		$cstr = "";
+		$cstr2 = "";
+		$priCname =  $this->tcols[$table][0];
+		$altCname =  $priCname;
+
+//print "\n------------------------------------------------------------\n";		
+//print_r($priCname);
+//print "\n------------------------------------------------------------\n";		
+
+		for ( $i=0 ; $i < count($priCname) ; $i++ ) {
+			$priCname[$i] = $table.".".$priCname[$i];
+			$altCname[$i] = $table.".".$altCname[$i];
+		}
+		/* add quites around each word */
+		for ( $i=0 ; $i < count($priCname) ; $i++ ) {
+			$priCname[$i] = "'".$priCname[$i]."'";
+		}
+		/* add comma to end of all but lasty word */
+		for ( $i=0 ; $i < count($priCname)-1 ; $i++ ) {
+			$priCname[$i] = $priCname[$i].",";
+			$altCname[$i] = $altCname[$i].",";
+		}
+//print "\n------------------------------------------------------------\n";		
+//print_r($priCname);
+//print "\n------------------------------------------------------------\n";		
+		
+		foreach ($priCname as $cname) {
+			$cstr .= $cname;
+		}
+		foreach ($altCname as $cname) {
+			$cstr2 .= $cname;
+		}
+		
+		$cstr = "SELECT ${cstr} UNION ALL SELECT ${cstr2} ";
+//print "\n------------------------------------------------------------\n";		
+//print_r($cstr);
+//print "\n------------------------------------------------------------\n";		
+//exit;
+		$status = "";
+		$t = time();
+
+		$sql = <<<EOX
+		${cstr}  
+		INTO OUTFILE '${table}.csv'
+		COLUMNS TERMINATED BY ','
+		ENCLOSED BY '"'
+		LINES TERMINATED BY '\\n'
+		from ${table};
+	
+EOX;
+		
+		$r = $this->update($sql, "export to csv");
+
+//		file_put_contents("tmp.sql",$sql);
+//		$cmd = "mysql -uroot -p1q2w3e clarity -e '\! mv /var/lib/mysql/truevalue/${table}.csv /tmp'";
+///		`$cmd`;
+
+		$status .= "EXPORTED -> ${table}.csv\n";
+		return($status);
+	}
+
 }

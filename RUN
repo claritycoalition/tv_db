@@ -1,0 +1,6 @@
+#!/bin/bash
+
+find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
+php ./read.php
+
+find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;

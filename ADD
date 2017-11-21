@@ -1,0 +1,95 @@
+#!/bin/bash
+
+#./ADD ARGNAT COW 2014 3877000 2686838
+#ENTITY	ITEM	YEAR	POP		KG		GDP					UNITGDP			KG/PP/YEAR		KGCO2			??			??
+#------	------	------	------		------		------					------			------			------			------			------
+#ARGNAT	WHT	2014	43850000	9315049000	1469747061				0.157781999965862	212.429851767389	0.14			0.887300199200739	188.49
+#ARGNAT	COW	2014	43850000	2821700000	7037021448				2.4938942651593		64.3489167616876	30.86			12.3742214861017	796.27
+#ARGNAT	MIL	2014	43850000	11009900000	3435760403				0.312060999918255	251.080957810718	0.42			1.34589070761812	337.93
+	
+	
+#ENTITY	ITEM	YEAR	POP/SERV	POP/YR		KG		KG/MEAL			KG/PERS/MEAL		UNIT/GDP		KG/PP/YR		KGC02			??
+#------	------	------	------		------		------		------			------			------			------			------			------
+#ECOCHE	WHT	2014	25		18250		1		0.04			0.157781999965862	29.2			0.14			0.887300199200739	25.91
+#ECOCHE	COW	2014	25		18250		0		0			2.4938942651593		0			30.86			12.374221486101		0.00
+#ECOCHE	MIL 	2014	25		18250		11.3		0.452			0.312060999918255	329.96			0.42			1.34589070761812	444.09
+
+
+
+
+
+#--- for V3_entity_item ---
+TYPE=$1
+ENTITY=$2
+ITEM=$3
+YEAR=$4
+
+
+
+if [ ${TYPE} = 'PROD' ]
+then
+	KG_YR=$5
+	GDP=$6
+
+	ITEM_PRODUCED=${ITEM}
+	
+	echo "-- for ALL ---"
+	
+	echo "INSERT IGNORE into V3_item (name) values('${ITEM}');"
+	
+	echo "-- for V3_entity_item ---"
+
+	echo "INSERT IGNORE into V3_entity_item (entity,item,year,kg_yr,gdp) values('${ENTITY}','${ITEM}',${YEAR},${KG_YR},${GDP});"
+
+	echo "-- for V3_ledger ---"
+
+	echo "INSERT IGNORE into V3_ledger (entity,production,consumption) values('${ENTITY}','${ITEM_PRODUCED}',NULL);"
+
+fi
+
+if [ ${TYPE} = 'CONS' ]
+then
+	KG_MEAL=$5
+	
+	CONTAINS=${ITEM}
+	ITEM_CONSUMED=${ITEM}
+	
+	echo "-- for V3_entity_item ---"
+
+	echo "INSERT IGNORE into V3_entity_item (entity,item,year) values('${ENTITY}','${ITEM}',${YEAR});"
+
+	echo "-- for V3_ledger ---"
+
+	echo "INSERT IGNORE into V3_ledger (entity,production,consumption) values('${ENTITY}',NULL,'${ITEM_CONSUMED}');"
+
+	echo "-- for V3_service_item ---"
+
+	echo "INSERT IGNORE into V3_service_item (service_name, item) values('ECOMEAL','${ITEM}');"
+
+	echo "-- for V3_service_state ---"
+
+	echo "INSERT IGNORE into V3_service_stats (name,contains,kg) values('ECOMEAL','${CONTAINS}','${KG_MEAL}');"
+fi
+
+if [ ${TYPE} = 'RES' ]
+then
+        TYPE=$1
+        RESOURCE=$2
+        ITEM=$3
+        YEAR=$4
+	RES_KG_GDP=$5
+	
+	echo "-- for V3_resource ---"
+
+	echo "INSERT IGNORE INTO V3_resource (name) VALUES('${RESOURCE}');"
+
+	echo "-- for V3_item_resource ---"
+
+	echo "INSERT into V3_item_resource (item,resource,year,res_kg_gdp) values('${ITEM}','${RESOURCE}',${YEAR},${RES_KG_GDP}) ON DUPLICATE KEY UPDATE item='${ITEM}',resource='${RESOURCE}',year=${YEAR},res_kg_gdp=${RES_KG_GDP};"
+
+fi
+
+#echo "-- cleanup ---"
+
+#echo "UPDATE V3_ledger set production=NULL where production='x';"
+#echo "UPDATE V3_ledger set consumption=NULL where consumption='x';"

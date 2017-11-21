@@ -10,11 +10,14 @@ require "lib/Class/DataMapper.class.php";
 //$dbh = new DataMapper($q);
 $dbh = new DataMapper();
 
-$step=0;
+$step=0	;
 /* dump all the data to screen */
 //$dbh->screendump();
 
 //print_r($dbh->getCols("V3_entity"));
+
+
+
 
 $dbh->test("select NOW()");
 print G($dbh->update_KG_VAL_for_Entity_item());
@@ -40,6 +43,15 @@ print G($dbh->update_newdata_for_svc_Entity_item("CPE"));
 step(0,"update_KgVal_for_svc_Entity_item('PER')");
 print G($dbh->update_newdata_for_svc_Entity_item("PER"));
 
+step(0,"update_KgVal_for_svc_Entity_item('MIL')");
+print G($dbh->update_newdata_for_svc_Entity_item("MIL"));
+
+step(0,"update_KgVal_for_svc_Entity_item('COW')");
+print G($dbh->update_newdata_for_svc_Entity_item("COW"));
+
+step(0,"update_KgVal_for_svc_Entity_item('WHT')");
+print G($dbh->update_newdata_for_svc_Entity_item("WHT"));
+
 step(0,"update_Entity_Stats()");
 print G($dbh->update_Entity_Stats());
 
@@ -48,6 +60,11 @@ print G($dbh->update_Entity_Stats());
 
 step(0,"Update projections");
 print G($dbh->update_projections());
+
+//step(0,"Export...");
+//print G($dbh->export());
+
+
 
 step(0,"FINISH - show tables");
 print $dbh->getTables("V3");

@@ -1776,3 +1776,161 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/jw/src/clarity/V3/read.php on line 50
+[15-Nov-2017 23:42:12 UTC] PHP Notice:  Undefined variable: status in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 814
+[15-Nov-2017 23:42:12 UTC] PHP Stack trace:
+[15-Nov-2017 23:42:12 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 23:42:12 UTC] PHP   2. DataMapper->export() /home/jw/src/clarity/V3/read.php:53
+[15-Nov-2017 23:42:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function retuirn() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:815
+Stack trace:
+#0 /home/jw/src/clarity/V3/read.php(53): DataMapper->export()
+#1 {main}
+  thrown in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 815
+[15-Nov-2017 23:45:07 UTC] PHP Notice:  Undefined variable: status in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 814
+[15-Nov-2017 23:45:07 UTC] PHP Stack trace:
+[15-Nov-2017 23:45:07 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/read.php:0
+[15-Nov-2017 23:45:07 UTC] PHP   2. DataMapper->export() /home/jw/src/clarity/V3/read.php:53
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:18 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:18 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:18 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:18 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:19 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:19 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:19 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:19 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:19 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:52:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:52:19 UTC] PHP Stack trace:
+[16-Nov-2017 01:52:19 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:52:19 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:52:19 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:53:08 UTC] PHP Notice:  Undefined property: DataMapper::$tcol in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:53:08 UTC] PHP Stack trace:
+[16-Nov-2017 01:53:08 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:53:08 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:53:08 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:53:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 828
+[16-Nov-2017 01:53:08 UTC] PHP Stack trace:
+[16-Nov-2017 01:53:08 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:53:08 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:53:08 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:53:54 UTC] PHP Notice:  Array to string conversion in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 829
+[16-Nov-2017 01:53:54 UTC] PHP Stack trace:
+[16-Nov-2017 01:53:54 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:53:54 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:53:54 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 01:58:29 UTC] PHP Notice:  Undefined variable: ctr in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 834
+[16-Nov-2017 01:58:29 UTC] PHP Stack trace:
+[16-Nov-2017 01:58:29 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 01:58:29 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 01:58:29 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
+[16-Nov-2017 02:20:20 UTC] PHP Notice:  Undefined variable: altname in /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php on line 843
+[16-Nov-2017 02:20:20 UTC] PHP Stack trace:
+[16-Nov-2017 02:20:20 UTC] PHP   1. {main}() /home/jw/src/clarity/V3/export.php:0
+[16-Nov-2017 02:20:20 UTC] PHP   2. DataMapper->getTables() /home/jw/src/clarity/V3/export.php:15
+[16-Nov-2017 02:20:20 UTC] PHP   3. DataMapper->export() /home/jw/src/clarity/V3/lib/Class/DataMapper.class.php:754
