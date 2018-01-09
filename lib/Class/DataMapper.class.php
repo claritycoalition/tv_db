@@ -10,7 +10,7 @@ class DataMapper {
 
 	public function __construct() {
 		try {
-			$dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'root', '1q2w3e');
+			$dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'root', '');
 			$this->pdo = $dbh;
 			$this->o = $dbh;
 			$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -631,9 +631,9 @@ EOX;
 	 * ******************************************************* */
 
 	public function test($sql) {
-		$out = `mysql -u root -p1q2w3e -t clarity -e "${sql}"`;
+		$out = `mysql -u root  -t clarity -e "${sql}"`;
 		print(C($out));
-		$out = `mysql -u root -p1q2w3e -t clarity -e "select * from V3_entity_item"`;
+		$out = `mysql -u root  -t clarity -e "select * from V3_entity_item"`;
 		print(M($out));
 	}
 

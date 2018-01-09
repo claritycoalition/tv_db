@@ -1,5 +1,6 @@
 #!/bin/bash
 D=$1
-mysqldump -uroot -p1q2w3e  --add-drop-table clarity > clarity_${D}.sql
+mysqldump -uroot --add-drop-table clarity > clarity_${D}.sql
+mysqldump -uroot --add-drop-table --skip-opt clarity > clarity_${D}_noopt.sql
 echo "clarity_${D}.sql" >lastsave
 cat lastsave
