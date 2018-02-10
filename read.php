@@ -5,8 +5,22 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+define("CLI",0);
+define("HTTP",1);
+
 require "lib/functions.php";
-require "lib/Class/DataMapper.class.php";
+require "lib/Class/DataMapper.class.php";"=[".
+
+$_SESSION['mode'] = CLI;
+if (php_sapi_name() != "cli") {
+    $_SESSION['mode'] = HTTP;
+}
+
+//print $_SESSION['mode'];exit;
+
+
+
+
 //require "lib/Class/queries.php";
 //$dbh = new DataMapper($q);
 $dbh = new DataMapper();
@@ -17,8 +31,7 @@ $step=0	;
 
 //print_r($dbh->getCols("V3_entity"));
 
-
-
+if ($_SESSION['mode'] == HTTP)  echo "<pre>";
 
 $dbh->test("select NOW()");
 
@@ -75,16 +88,16 @@ print G($dbh->update_newdata_for_svc_Entity_item("AVO"));
 
 step(0,"update_KgVal_for_svc_Entity_item('CPE')");
 print G($dbh->update_newdata_for_svc_Entity_item("CPE"));
-
+//
 step(0,"update_KgVal_for_svc_Entity_item('PER')");
 print G($dbh->update_newdata_for_svc_Entity_item("PER"));
-
+//
 step(0,"update_KgVal_for_svc_Entity_item('MIL')");
 print G($dbh->update_newdata_for_svc_Entity_item("MIL"));
-
+//
 step(0,"update_KgVal_for_svc_Entity_item('COW')");
 print G($dbh->update_newdata_for_svc_Entity_item("COW"));
-
+//
 step(0,"update_KgVal_for_svc_Entity_item('WHT')");
 print G($dbh->update_newdata_for_svc_Entity_item("WHT"));
 

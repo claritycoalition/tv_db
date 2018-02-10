@@ -37,7 +37,7 @@ class DataMapper {
                 SELECT
                 V3_entity_item.entity,
                 V3_entity_service.service_name,
-                Sum(V3_entity_service.unique_pop * V3_entity_service.returning * V3_service_stats.kg) AS c_tot_kg
+                Sum(V3_entity_service.unique_pop * V3_service_stats.kg) AS c_tot_kg
                 FROM
                     V3_entity_item
                     Inner Join V3_entity_service ON V3_entity_item.entity = V3_entity_service.entity_name
@@ -63,17 +63,17 @@ EOX;
         $status .= "QUERYING [V3_entity_service :: for c_*\n";
         $status .= "\tUPDATED [ :: c_tot_kg\n";
 
-        $sql = <<<EOX
-                update V3_entity_service set 
-                c_kg_per_client =  (V3_entity_service.c_tot_kg /V3_entity_service.unique_pop),
-                c_kg_per_event = (V3_entity_service.c_tot_kg /V3_entity_service.returning),
-                c_kg_per_meal = (V3_entity_service.c_tot_kg /(V3_entity_service.returning * V3_entity_service.unique_pop))
-EOX;
-
-        $r = $this->update($sql, "update_Entity_Service");
-        $this->test("select c_kg_per_client,c_kg_per_event,c_kg_per_meal from  V3_entity_service");
-
-        $status .= "\tUPDATED [ :: c_*\n";
+//        $sql = <<<EOX
+//                update V3_entity_service set 
+//                c_kg_per_client =  (V3_entity_service.c_tot_kg /V3_entity_service.unique_pop)
+//                c_kg_per_event = (V3_entity_service.c_tot_kg /V3_entity_service.returning),
+//                c_kg_per_meal = (V3_entity_service.c_tot_kg /(V3_entity_service.returning * V3_entity_service.unique_pop))
+//EOX;
+//
+//        $r = $this->update($sql, "update_Entity_Service");
+//        $this->test("select c_kg_per_client,c_kg_per_event,c_kg_per_meal from  V3_entity_service");
+//
+//        $status .= "\tUPDATED [ :: c_*\n";
 
         return($status);
     }
@@ -85,102 +85,102 @@ EOX;
     public function update_newdata_for_svc_Entity_item($item) {
         $status = "";
         $r = null;
-
-        /**         * ********************************* */
-        /*        kg_yr                        */
-        /**         * ********************************* */
-        $sql = <<<EOX
-                UPDATE V3_entity_item,V3_entity_service 
-                SET V3_entity_item.kg_yr = (
-                    SELECT 
-                        (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.unique_pop AS c_kg_svc_yr
-                    FROM
-                        V3_service_stats
-                            Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
-                    WHERE
-                        V3_service_stats.contains =  '${item}'
-                )
-                WHERE 
-                    V3_entity_item.entity = V3_entity_service.entity_name AND
-                    V3_entity_item.item = '${item}'          
-EOX;
-
-        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
-        $this->test("select kg_yr from V3_entity_item");
-
-        $status .= "UPDATED [kg_yr]  [V3_entity_item]\n";
+//
+//        /**         * ********************************* */
+//        /*        kg_yr                        */
+//        /**         * ********************************* */
+//        $sql = <<<EOX
+//                UPDATE V3_entity_item,V3_entity_service 
+//                SET V3_entity_item.kg_yr = (
+//                    SELECT 
+//                        (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.unique_pop AS c_kg_svc_yr
+//                    FROM
+//                        V3_service_stats
+//                            Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
+//                    WHERE
+//                        V3_service_stats.contains =  '${item}'
+//                )
+//                WHERE 
+//                    V3_entity_item.entity = V3_entity_service.entity_name AND
+//                    V3_entity_item.item = '${item}'          
+//EOX;
+//
+//        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+//        $this->test("select kg_yr from V3_entity_item");
+//
+//        $status .= "UPDATED [kg_yr]  [V3_entity_item]\n";
 
         /**         * ********************************* */
         /*        c_kg_svc_single              */
         /**         * ********************************* */
-        $sql = <<<EOX
-                update V3_entity_item,V3_entity_service set
-                V3_entity_item.c_kg_svc_single = (
-                    SELECT
-                    (V3_service_stats.kg/V3_entity_service.meals_pp) as c_kg_svc_single
-                    FROM
-                                    V3_service_stats
-                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
-                    WHERE
-                                    V3_service_stats.contains =  '${item}'                
-                )
-                WHERE 
-                V3_entity_item.entity = V3_entity_service.entity_name AND
-                V3_entity_item.item = '${item}'  
-EOX;
-
-        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_svc_single from V3_entity_item");
-
-        $status .= "UPDATED [c_kg_svc_single]  [V3_entity_item]\n";
+//        $sql = <<<EOX
+//                update V3_entity_item,V3_entity_service set
+//                V3_entity_item.c_kg_svc_single = (
+//                    SELECT
+//                    (V3_service_stats.kg/V3_entity_service.meals_pp) as c_kg_svc_single
+//                    FROM
+//                                    V3_service_stats
+//                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
+//                    WHERE
+//                                    V3_service_stats.contains =  '${item}'                
+//                )
+//                WHERE 
+//                V3_entity_item.entity = V3_entity_service.entity_name AND
+//                V3_entity_item.item = '${item}'  
+//EOX;
+//
+//        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+//        $this->test("select c_kg_svc_single from V3_entity_item");
+//
+//        $status .= "UPDATED [c_kg_svc_single]  [V3_entity_item]\n";
 
         /**         * ********************************* */
         /*        c_kg_svc_yr                  */
         /**         * ********************************* */
-        $sql = <<<EOX
-                update V3_entity_item,V3_entity_service set
-                V3_entity_item.c_kg_svc_yr = (
-                    SELECT
-                    (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.unique_pop AS c_kg_svc_yr
-                    FROM
-                                    V3_service_stats
-                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
-                    WHERE
-                                    V3_service_stats.contains =  '${item}'                
-                )
-                WHERE 
-                V3_entity_item.entity = V3_entity_service.entity_name AND
-                V3_entity_item.item = '${item}'
-EOX;
-
-        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_svc_yr from V3_entity_item");
-
-        $status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
+//        $sql = <<<EOX
+//                update V3_entity_item,V3_entity_service set
+//                V3_entity_item.c_kg_svc_yr = (
+//                    SELECT
+//                    (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.unique_pop AS c_kg_svc_yr
+//                    FROM
+//                                    V3_service_stats
+//                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
+//                    WHERE
+//                                    V3_service_stats.contains =  '${item}'                
+//                )
+//                WHERE 
+//                V3_entity_item.entity = V3_entity_service.entity_name AND
+//                V3_entity_item.item = '${item}'
+//EOX;
+//
+//        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+//        $this->test("select c_kg_svc_yr from V3_entity_item");
+//
+//        $status .= "UPDATED [c_kg_svc_yr]  [V3_entity_item]\n";
 
         /**         * ********************************* */
         /*        c_kg_pp_yr                   */
         /**         * ********************************* */
-        $sql = <<<EOX
-                update V3_entity_item,V3_entity_service set
-                V3_entity_item.c_kg_pp_yr = (
-                    SELECT
-                    (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.returning AS c_kg_pp_yr
-                    FROM
-                                    V3_service_stats
-                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
-                    WHERE
-                                    V3_service_stats.contains =  '${item}'                
-                )
-                WHERE 
-                V3_entity_item.entity = V3_entity_service.entity_name AND
-                V3_entity_item.item = '${item}'
-EOX;
-
-        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
-        $this->test("select c_kg_pp_yr from V3_entity_item");
-
-        $status .= "UPDATED [c_kg_pp_yr]  [V3_entity_item]\n";
+//        $sql = <<<EOX
+//                update V3_entity_item,V3_entity_service set
+//                V3_entity_item.c_kg_pp_yr = (
+//                    SELECT
+//                    (V3_service_stats.kg/V3_entity_service.meals_pp) * V3_entity_service.returning AS c_kg_pp_yr
+//                    FROM
+//                                    V3_service_stats
+//                                    Inner Join V3_entity_service ON V3_entity_service.service_name = V3_service_stats.name
+//                    WHERE
+//                                    V3_service_stats.contains =  '${item}'                
+//                )
+//                WHERE 
+//                V3_entity_item.entity = V3_entity_service.entity_name AND
+//                V3_entity_item.item = '${item}'
+//EOX;
+//
+//        $r = $this->update($sql, "update_newdata_for_svc_Entity_item");
+//        $this->test("select c_kg_pp_yr from V3_entity_item");
+//
+//        $status .= "UPDATED [c_kg_pp_yr]  [V3_entity_item]\n";
 
         /**         * ********************************* */
         /*        gdp                          */
@@ -318,31 +318,31 @@ EOX;
         /**         * ********************************* */
         /*        c_kg_meal                */
         /**         * ********************************* */
-        $sql = <<<EOX
-                SELECT DISTINCT
-                V3_service_stats.kg/V3_entity_service.meals_pp AS c_kg_meal
-                FROM
-                V3_entity_service
-                Inner Join V3_service_stats ON V3_entity_service.service_name = V3_service_stats.name
-                Inner Join V3_entity_item ON V3_entity_service.entity_name = V3_entity_item.entity AND V3_entity_service.`year` = V3_entity_item.`year` AND V3_service_stats.contains = V3_entity_item.item
-                WHERE
-                V3_entity_item.item =  '${item}' AND
-                V3_entity_item.entity =  'ECOCHE'
-EOX;
-        $r = $this->select($sql, "update_KgVal_for_svc_Entity_item");
-        $c_kg_meal = $r[0]['c_kg_meal'];
-
-        $sql = <<<EOX
-                update V3_service_item set 
-                    c_kg_pp_meal = ${c_kg_meal} 
-                WHERE
-                    V3_service_item.item =  '${item}' AND
-                    V3_service_item.service_name =  'ECOMEAL'
-EOX;
-        $r = $this->update($sql, "update_KgVal_for_svc_Entity_item");
-        $this->test("select * from V3_service_item");
-
-        $status .= "\tUPDATING [V3_service_item ...]\n";
+//        $sql = <<<EOX
+//                SELECT DISTINCT
+//                V3_service_stats.kg/V3_entity_service.meals_pp AS c_kg_meal
+//                FROM
+//                V3_entity_service
+//                Inner Join V3_service_stats ON V3_entity_service.service_name = V3_service_stats.name
+//                Inner Join V3_entity_item ON V3_entity_service.entity_name = V3_entity_item.entity AND V3_entity_service.`year` = V3_entity_item.`year` AND V3_service_stats.contains = V3_entity_item.item
+//                WHERE
+//                V3_entity_item.item =  '${item}' AND
+//                V3_entity_item.entity =  'ECOCHE'
+//EOX;
+//        $r = $this->select($sql, "update_KgVal_for_svc_Entity_item");
+//        $c_kg_meal = $r[0]['c_kg_meal'];
+//
+//        $sql = <<<EOX
+//                update V3_service_item set 
+//                    c_kg_pp_meal = ${c_kg_meal} 
+//                WHERE
+//                    V3_service_item.item =  '${item}' AND
+//                    V3_service_item.service_name =  'ECOMEAL'
+//EOX;
+//        $r = $this->update($sql, "update_KgVal_for_svc_Entity_item");
+//        $this->test("select * from V3_service_item");
+//
+//        $status .= "\tUPDATING [V3_service_item ...]\n";
 
         return($status);
     }
@@ -472,58 +472,90 @@ EOX;
      * 
      * ******************************************************* */
 
+    /*
+    17.5 kg_pp_yr
+    1% of this = 
+            
+    0.08 p0 ARGNAT kp_pp_yr
+            
+    */
+    
+    
+    
     public function update_projections() {
+        
+        $sql = "DROP TABLE IF EXISTS  V3_pre_proj3";
+        $r = $this->update($sql, "delete old '_adjust' table");
+        
+        
+        
         $sql = <<<EOX
-                create table V3_pre_proj3
-
-                SELECT
-                @v_frac_pop := V3_projections.v_pct_pop/100 as v_frac_pop,
-
-                @cv_sample_pop 			:= (@v_frac_pop * V3_entity_stats.pop) as cv_sample_pop ,
-                @ecval := (
-                        SELECT DISTINCT
-                        sum(T.c_kg_pp_yr)
-                        FROM
-                        V3_entity_item AS T
-                        Inner Join V3_projections ON T.`year` = V3_projections.`year`
-                        Inner Join V3_entity_stats ON V3_projections.`year` = V3_entity_stats.`year`
-                        WHERE
-                        T.entity =  'ECOCHE' AND
-                        V3_entity_stats.entity =  'ARGNAT'
-                ) as ecval ,
-                @c_new_kg_item 			:= (@ecval * (V3_entity_stats.pop * @v_frac_pop)) as c_new_kg_item,
-
-                @bau_kg_gdp_item 		:= E.kg_yr 											as bau_kg_gdp_item,
-
-                @c_reduced  				:= (E.kg_yr * (1-@v_frac_pop)) 				as c_redcued,
-                @c_reducedby  			:= (E.kg_yr  - @c_reduced) 							as c_redcuedby,
-                @c_new_tot_kg_gdp_item  	:= ( @c_reduced + @c_new_kg_item ) 					as c_new_tot_kg_gdp_item,
-                ((@c_new_tot_kg_gdp_item - E.kg_yr)/E.kg_yr)*100  									as c_kg_delta_pct,
+			create table V3_pre_proj3
+				SELECT 
+					 @ITEM					:= P.item as item-- 99%
+					,@ARGNAT_PCT 			:=  CAST(1 AS DECIMAL(10,6)) - (P.v_pct_pop/100) 	as NAT_Pop_Pct-- 99%
+					,@ECOCHE_PCT 			:= P.v_pct_pop/100									as ECO_Pop_Pct -- 1%
+					-- ,@ORG_POP			:= S.pop											as ORG_pop
+					,@ARGNAT_kg_pp_yr_TOT	:= ARGNAT.c_kg_pp_yr								as NAT_kg_pp_yr -- 0.088 
+					,@ECOCHE_kg_pp_yr_TOT	:= ECOCHE.c_kg_pp_yr								as ECO_kg_pp_yr -- 17.52
+					,@ARGNAT_kg_pp_yr_PCT	:= @ARGNAT_kg_pp_yr_TOT * @ARGNAT_PCT				as NAT_Sample -- 0.088 * 99% = 0.08712
+					,@ECOCHE_kg_pp_yr_PCT	:= @ECOCHE_kg_pp_yr_TOT * @ECOCHE_PCT				as ECO_Sample -- 17.5 * 1% = 0.175
+					,@DELTA 				:= @ARGNAT_kg_pp_yr_PCT + @ECOCHE_kg_pp_yr_PCT		as Proj_NAT_kg_pp_yr -- 0.08712 + 0.175 = 0.26212
+					FROM 
+						 V3_projections as P
+						,V3_entity_item as ARGNAT
+						,V3_entity_item as ECOCHE
+					WHERE 
+						ARGNAT.entity		= 'ARGNAT'
+						AND ECOCHE.entity	= 'ECOCHE'
+						AND P.item			= ARGNAT.item
+						AND P.item			= ECOCHE.item
+						AND P.`year`		= ARGNAT.`year`
+						AND P.`year`		= ECOCHE.`year`
 
 
-                @bau_gdp 				:= V3_entity_stats.gdp 								as bau_gdp,
-                @c_item_gdp_pct 			:= (E.kg_yr/@bau_gdp )*100							as c_item_gdp_pct,
-
-                @c_gdp_reduced  			:= (@bau_gdp  - @c_reducedby) 						as c_gdp_redcued,
-                @c_new_tot_kg_gdp 		:= ( @c_gdp_reduced + @c_new_kg_item ) 				as c_new_tot_kg_gdp,
-                @c_gdp_delta_pct 			:= ((@c_new_tot_kg_gdp - @bau_gdp)/@bau_gdp)*100  	as c_gdp_delta_pct,
-
-                @c_val_gdp_tot			:= E.c_kg_val*@c_new_kg_item						as c_val_gdp_tot,
-
-
-                V3_entity_stats.pop AS bau_pop,
-                E.gdp AS bau_gdp_item,
-
-                E.entity,
-                E.item,
-                E.`year`
-                FROM
-                V3_entity_stats
-                Inner Join V3_entity_item AS E ON V3_entity_stats.entity = E.entity AND V3_entity_stats.`year` = E.`year`
-                Inner Join V3_projections ON E.entity = V3_projections.entity AND E.item = V3_projections.item AND E.`year` = V3_projections.`year`
-                WHERE
-                V3_entity_stats.entity =  'ARGNAT'
 EOX;
+//        $sql = <<<EOX
+//                create table V3_pre_proj3
+//
+//                SELECT
+//                    @v_frac_pop                                         := V3_projections.v_pct_pop/100 as v_frac_pop
+//                    ,@cv_sample_pop                              := (@v_frac_pop * V3_entity_stats.pop) as cv_sample_pop
+//                    ,@ecval := (
+//                            SELECT DISTINCT
+//                                sum(T.c_kg_pp_yr)
+//                            FROM
+//                                V3_entity_item AS T
+//                                Inner Join V3_projections ON T.`year` = V3_projections.`year`
+//                                Inner Join V3_entity_stats ON V3_projections.`year` = V3_entity_stats.`year`
+//                            WHERE
+//                                T.entity =  'ECOCHE' 
+//                                AND V3_entity_stats.entity =  'ARGNAT'
+//                    ) as ecval
+//                    ,@c_new_kg_item                                     := (@ecval * (V3_entity_stats.pop * @v_frac_pop))   as c_new_kg_item
+//                    ,@bau_kg_gdp_item                                   := E.kg_yr                                          as bau_kg_gdp_item
+//                    ,@c_reduced                                         := (E.kg_yr * (1-@v_frac_pop))                      as c_redcued
+//                    ,@c_reducedby                                       := (E.kg_yr  - @c_reduced)                          as c_redcuedby
+//                    ,@c_new_tot_kg_gdp_item                             := ( @c_reduced + @c_new_kg_item )                  as c_new_tot_kg_gdp_item
+//                    ,((@c_new_tot_kg_gdp_item - E.kg_yr)/E.kg_yr)*100                                                       as c_kg_delta_pct
+//                    ,@bau_gdp                                           := V3_entity_stats.gdp                              as bau_gd
+//                    ,@c_item_gdp_pct                                    := (E.kg_yr/@bau_gdp )*100                          as c_item_gdp_pct
+//                    ,@c_gdp_reduced                                     := (@bau_gdp  - @c_reducedby)                       as c_gdp_redcued
+//                    ,@c_new_tot_kg_gdp                                  := ( @c_gdp_reduced + @c_new_kg_item )              as c_new_tot_kg_gdp
+//                    ,@c_gdp_delta_pct                                   := ((@c_new_tot_kg_gdp - @bau_gdp)/@bau_gdp)*100    as c_gdp_delta_pct
+//                    ,@c_val_gdp_tot                                     := E.c_kg_val*@c_new_kg_item                        as c_val_gdp_tot
+//                    ,V3_entity_stats.pop                                                                                    AS bau_pop
+//                    ,E.gdp                                                                                                  AS bau_gdp_item
+//                    ,E.entity
+//                    ,E.item
+//                    ,E.`year`
+//                FROM
+//                    V3_entity_stats
+//                    Inner Join V3_entity_item AS E ON V3_entity_stats.entity = E.entity AND V3_entity_stats.`year` = E.`year`
+//                    Inner Join V3_projections ON E.entity = V3_projections.entity AND E.item = V3_projections.item AND E.`year` = V3_projections.`year`
+//                WHERE
+//                    V3_entity_stats.entity =  'ARGNAT'
+//EOX;
         $this->delTable("V3_pre_proj3");
         $r = $this->update($sql, "update_KG_PP_YR_for_Entity_Item");
         $this->test("select V3_entity_item.kg_yr,'/',V3_entity_stats.pop,c_gdp_pp_yr FROM V3_entity_item Inner Join V3_entity_stats ON V3_entity_stats.entity = V3_entity_item.entity");  //JWX dup?
@@ -576,10 +608,10 @@ EOX;
      * ******************************************************* */
 
     public function test($sql) {
-        $out = `mysql -u root  -t clarity -e "${sql}"`;
-        print(C($out));
-        $out = `mysql -u root  -t clarity -e "select * from V3_entity_item"`;
-        print(M($out));
+//        $out = `mysql -u root  -t clarity -e "${sql}"`;
+//        print(C($out));
+//        $out = `mysql -u root  -t clarity -e "select * from V3_entity_item"`;
+//        print(M($out));
     }
 
     /*     * *******************************************************
@@ -656,7 +688,7 @@ EOX;
     }
 
     /*     * *******************************************************
-     * 
+     * /usr/local/src/tv_db/unlink.sh /var/lib/mysql/clarity/V3_area.csv
      * ******************************************************* */
 
     public function getTables($pre) {
@@ -686,7 +718,14 @@ EOX;
         }
 
         foreach ($o as $table) {
-            unlink("/var/lib/mysql/clarity/".$table.".csv");
+//            unlink("/var/lib/mysql/clarity/".$table.".csv");
+
+			$cmd = "sudo /usr/local/src/tv_db/unlink.sh /var/lib/mysql/clarity/${table}.csv";
+			echo "[ ${cmd} ]";
+			echo "";
+		echo `$cmd`;
+
+
 //            var_export($o);
             $this->tcols[$table] = array();
             $mask = "";
@@ -763,7 +802,9 @@ EOX;
     public function debug($s, $title = null) {
         $r = "\n";
         $r .= "[$title]\n$s\n";
-        print R($r);
+        print ">>> SQL >>>\n";
+        print R($r,getMode());
+        print "<<< SQL <<<\n";
         return;
     }
 
@@ -815,7 +856,19 @@ EOX;
 //exit;
         $status = "";
         $t = time();
-        unlink("/var/lib/mysql/clarity/".$table.".csv");
+
+#        unlink("/var/lib/mysql/clarity/".$table.".csv");
+
+		$cmd = "sudo /usr/local/src/tv_db/unlink.sh /var/lib/mysql/clarity/${table}.csv";
+			echo "[ ${cmd} ]";
+		echo "";
+		echo `$cmd`;
+
+
+
+		
+		
+		
         $sql = <<<EOX
             ${cstr}  
             INTO OUTFILE '${table}.csv'
@@ -886,7 +939,7 @@ EOX;
         $r = $this->delTable("tmp");
         $r = $this->update($sql1, "collect averages");
         $r = $this->update($sql2, "update_avg_units");
-        $this->test("select res_unit_gdp from V3_item_resource");
+        $this->test("select res_unit_gdp_mean from V3_item_resource");
 
         $status .= "UPDATED [avg]  [V3_item_resource]\n";
 

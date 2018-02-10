@@ -8,4 +8,7 @@ rm test.xls 2> /dev/null
 ssconvert --merge-to test.xls  `cat tmp` 2> /dev/null
 zip -q -r clarity_database.zip  /var/lib/mysql/clarity 
 
+find  /var/lib/mysql/clarity -name "*.csv" -exec cp {} ./csv \;
 find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
+
+chown -R jw csv

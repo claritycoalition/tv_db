@@ -1,0 +1,179 @@
+
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+        <!-- link rel="stylesheet" type="text/css" href="bell.css" media="all" -->
+
+        <style>
+            [id^='chartDiv'] {
+                width       : 50%;
+                height      : 300px;
+                font-size   : 11px;
+                float:left;
+            }    
+        </style>
+
+        <script>
+
+//----------------------------------------------------------------------------------------------
+// Calculates a point Z(x), the Probability Density Function, on any normal curve. 
+// This is the height of the point ON the normal curve.
+// For values on the Standard Normal Curve, call with Mean = 0, StdDev = 1.
+
+            $(document).ready(function () {
+
+                var items = [
+                    ['TST', 0.7187, 0.2046],
+                    ['AVO', 0.7187, 0.2046],
+                    ['COW', 29.9533, 2.1396],
+                    ['CPE', 0.7167, 0.0974],
+                    ['MIL', 0.86, 0.3238],
+                    ['PER', 0.655, 0.225],
+                    ['WHT', 1466.6667, 124.7219]
+                ];
+
+                for (var i = 0; i < items.length; i += 1) {
+                    var uid = uuidv4();
+                    console.log(uid);
+                    var chartContainer = document.createElement('div');
+                    chartContainer.id = uid;             // No setAttribute required
+                    chartContainer.className = 'someClass'; // No setAttribute required, note it's "className" to avoid conflict with JavaScript reserved word
+                    document.body.appendChild(chartContainer);
+
+                    var name = items[i][0];
+                    var mean = items[i][1];
+                    var sdev = items[i][2];
+                    chartIt(uid, name, mean, sdev);
+                }
+
+
+
+            });
+
+            function uuidv4() {
+                return 'chartDiv_xxxxxxxx'.replace(/[xy]/g, function (c) {
+                    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            }
+
+            function chartIt(chartDiv, itemName, _mean, _stddev) {
+
+                var title = itemName + "(" + _mean + "/" + _stddev + ")";
+
+                function NormalDensityZx(x, Mean, StdDev) {
+                    var a = x - Mean;
+                    return Math.exp(-(a * a) / (2 * StdDev * StdDev)) / (Math.sqrt(2 * Math.PI) * StdDev);
+                }
+
+                /**
+                 * Calculate data
+                 */
+
+                //var _mean = 0.7187;
+                //var _stddev =  0.2046;
+                //var _min = 0;
+                //var _max = _mean*2;
+
+//    var _mean = 0;
+//    var _stddev = 1;
+                //var _min = -5;
+                //var _max = _mean = 5;
+
+
+//    var _min = _stddev * 0.5;
+//    var _max = _mean * 2;
+
+
+                //kinda works
+                var delta = _mean - _stddev;
+                var _min = _mean - (delta * 2);// * -1;
+                var _max = _mean + (delta * 2);
+
+
+
+                /**
+                 * Define values where to put vertical lines at
+                 */
+                var verticals = [
+                    //  -1.4, -0.2, 1.2
+                    _mean, _stddev
+                ];
+
+                var chartData = [];
+                //for ( var i = -1; i < 1.01; i += 0.01 ) {
+//    for ( var i = -5   ; i < 5.1       ; i += 0.1)               {
+                for (var i = _min; i <= _max; i += (_max - _min) / 100) {
+                    var dp = {
+                        category: i,
+                        //value: NormalDensityZx(i, 0, 2)
+                        value: NormalDensityZx(i, _mean, _stddev)
+                    };
+                    if (verticals.indexOf(Math.round(i * 10000) / 10000) !== -1) {
+                        dp.vertical = dp.value;
+                    }
+                    chartData.push(dp);
+                }
+
+                /**
+                 * Create a chart
+                 */
+                var chart = AmCharts.makeChart(chartDiv, {
+                    "type": "serial",
+                    "theme": "light",
+                    "dataProvider": chartData,
+                    "precision": 2,
+                    "valueAxes": [{
+                            "gridAlpha": 0.2,
+                            "dashLength": 0
+                        }],
+                    "startDuration": 1,
+                    "graphs": [{
+                            "balloonText": "[[category]]: <b>[[value]]</b>",
+                            "lineThickness": 3,
+                            "valueField": "value"
+                        }, {
+                            "balloonText": "",
+                            "fillAlphas": 1,
+                            "type": "column",
+                            "valueField": "vertical",
+                            "fixedColumnWidth": 2,
+                            "labelText": "[[value]]",
+                            "labelOffset": 20
+                        }],
+                    "chartCursor": {
+                        "categoryBalloonEnabled": false,
+                        "cursorAlpha": 0,
+                        "zoomable": false
+                    },
+                    "categoryField": "category",
+                    "categoryAxis": {
+                        "gridAlpha": 0.05,
+                        "startOnAxis": true,
+                        "tickLength": 5,
+                        "title": title,
+                        "labelFunction": function (label, item) {
+                            return '' + Math.round(item.dataContext.category * 10) / 10;
+                        }
+                    }
+
+                });
+            }
+
+        </script>
+
+
+
+
+    </head>
+    <body>
+        <!-- script type="text/javascript" src="bell.js"></script -->
+        <div id="chartdiv"></div>           
+    </body>
+
+</html>
+

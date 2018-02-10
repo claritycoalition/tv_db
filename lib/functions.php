@@ -1,5 +1,16 @@
 <?php
 
+
+$HTML_CODES = array(
+    "red" => "<span style='color:red'>",
+    "green" => "<span style='color:green'>",
+    "yellow" => "<span style='color:yellow'>",
+    "blue" => "<span style='color:blue'>",
+    "magenta" => "<span style='color:magenta'>",
+    "cyan" => "<span style='color:cyan'>",
+
+);
+
 $ANSI_CODES = array(
     "off" => 0,
     "bold" => 1,
@@ -51,33 +62,70 @@ function elog($message, $color) {
 }
 
 function R($message) {
-    $color = "red+bold";
-    return(set($message, $color));
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:red'>$message</span>");
+    } else {
+        $color = "red+bold";
+        return(set($message, $color));
+    }    
 }
 
-function G($message) {
-    $color = "green+bold";
-    return(set($message, $color));
+function G($message) {    
+
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:green'>$message</span>");
+    } else {
+        $color = "green+bold";
+        return(set($message, $color));
+    }    
 }
 
 function B($message) {
-    $color = "blue+bold";
-    return(set($message, $color));
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:blue'>$message</span>");
+    } else {
+        $color = "blue+bold";
+        return(set($message, $color));
+    }    
 }
 
 function C($message) {
-    $color = "cyan+bold";
-    return(set($message, $color));
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:darkcyan'>$message</span>");
+    } else {
+        $color = "cyan+bold";
+        return(set($message, $color));
+    }    
 }
 
 function M($message) {
-    $color = "magenta+bold";
-    return(set($message, $color));
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:darkmagenta'>$message</span>");
+    } else {
+        $color = "magenta+bold";
+        return(set($message, $color));
+    }    
 }
 
 function Y($message) {
-    $color = "yellow+bold";
-    return(set($message, $color));
+    if ($_SESSION['mode'] == HTTP) {
+        return("<span style='color:yellow'>$message</span>");
+    } else {
+        $color = "yellow+bold";
+        return(set($message, $color));
+    }    
+}
+
+function getMode() {
+    $mode = CLI;
+    if (php_sapi_name() == "cli") {
+        $mode = CLI;
+        // In cli-mode
+    } else {
+        // Not in cli-mode
+        $mode = HTTP;
+    }
+    return($mode);
 }
 
 function replace($full_text, $search_regexp, $color) {
