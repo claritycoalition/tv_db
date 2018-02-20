@@ -10,7 +10,7 @@ class DataMapper {
 
     public function __construct() {
         try {
-            $dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'root', '');
+            $dbh = new PDO('mysql:host=localhost;dbname=clarity;charset=utf8mb4', 'Spartacus', 'holo3601q2w3e');
             $this->pdo = $dbh;
             $this->o = $dbh;
             $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -369,7 +369,7 @@ EOX;
             UPDATE V3_entity_item as a, V3_entity_stats as b 
                 set a.c_gdp_pp_yr = (SELECT a.gdp/b.pop 
                                     where a.entity = b.entity AND 
-                                    a.year = b.year
+                                    a.`year` = b.`year`
                                  )
 EOX;
 
@@ -631,7 +631,7 @@ EOX;
             return(1);
         } catch (PDOException $e) {
             $this->debug($sql, $title);
-            print_r($e->xdebug_message);
+            print_r($e);
             exit;
         }
     }
