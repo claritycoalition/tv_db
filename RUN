@@ -1,10 +1,10 @@
 #!/bin/bash
 
-mysql -uroot clarity < sql/clarity_min3avo.sql
+mysql -uroot clarity < sql/clarity_min3avo2.sql
 
-find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
-php ./read.php
+sudo find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
+sudo php ./read.php
 
-find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
+sudo find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
 
-chown -R jw *
+sudo chown -R jw *

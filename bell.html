@@ -47,7 +47,9 @@
                     var name = items[i][0];
                     var mean = items[i][1];
                     var sdev = items[i][2];
-                    chartIt(uid, name, mean, sdev);
+//                    chartIt(uid, name, mean, sdev);
+                    chartIt(uid, name, mean, sdev, mean, sdev,);
+                    chartIt(uid, name, mean, sdev, 0, 1);
                 }
 
 
@@ -61,7 +63,7 @@
                 });
             }
 
-            function chartIt(chartDiv, itemName, _mean, _stddev) {
+            function chartIt(chartDiv, itemName, _mean, _stddev, _meanDistVal, _stddevDistVal) {
 
                 var title = itemName + "(" + _mean + "/" + _stddev + ")";
 
@@ -91,7 +93,8 @@
 
                 //kinda works
                 var delta = _mean - _stddev;
-                var _min = _mean - (delta * 2);// * -1;
+//                var _min = _mean - (delta * 2);// * -1;
+                var _min = _stddev - (delta * 2);// * -1;
                 var _max = _mean + (delta * 2);
 
 
@@ -110,8 +113,7 @@
                 for (var i = _min; i <= _max; i += (_max - _min) / 100) {
                     var dp = {
                         category: i,
-                        //value: NormalDensityZx(i, 0, 2)
-                        value: NormalDensityZx(i, _mean, _stddev)
+                        value: NormalDensityZx(i, _meanDistVal, _stddevDistVal)
                     };
                     if (verticals.indexOf(Math.round(i * 10000) / 10000) !== -1) {
                         dp.vertical = dp.value;
