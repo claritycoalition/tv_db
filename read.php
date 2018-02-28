@@ -38,38 +38,21 @@ $dbh->test("select NOW()");
     print G($dbh->update_KG_VAL_for_Entity_item());
 //    step(0,"update_avg_units");
 
+	
+	
+	
+	$res = $dbh->getResNames();//array('CO2','WAT','_NP','_EP','_EC','_NC','JOB','LDT','PEN','HEA','EDU','EXP','IMP');
+	$itm = $dbh->getItemNames();// array('AVO','COW','WHT','MIL','CPE','PER');
+	
+	
 
-
-    step(0,"\t('AVO','CO2')");
-    print G($dbh->update_avg_units('AVO','CO2','2014'));
-    
-    step(0,"\t('AVO','WAT')");
-    print G($dbh->update_avg_units('AVO','WAT','2014'));
-
-    step(0,"\t('WHT','CO2')");
-    print G($dbh->update_avg_units('WHT','CO2','2014'));
-    step(0,"\t('WHT','WAT')");
-    print G($dbh->update_avg_units('WHT','WAT','2014'));
-
-    step(0,"\t('COW','CO2')");
-    print G($dbh->update_avg_units('COW','CO2','2014'));
-    step(0,"\t('COW','WAT')");
-    print G($dbh->update_avg_units('COW','WAT','2014'));
-
-    step(0,"\t('PER','CO2')");
-    print G($dbh->update_avg_units('PER','CO2','2014'));
-    step(0,"\t('PER','WAT')");
-    print G($dbh->update_avg_units('PER','WAT','2014'));
-
-    step(0,"\t('MIL','CO2')");
-    print G($dbh->update_avg_units('MIL','CO2','2014'));
-    step(0,"\t('MIL','WAT')");
-    print G($dbh->update_avg_units('MIL','WAT','2014'));
-
-    step(0,"\t('CPE','CO2')");
-    print G($dbh->update_avg_units('CPE','CO2','2014'));
-    step(0,"\t('CPE','WAT')");
-    print G($dbh->update_avg_units('CPE','WAT','2014'));
+	foreach ($res as $_R) {
+		foreach ($itm as $_I) {
+			step(0,"\t($_I,$_R)");
+			print G($dbh->update_avg_units($_I,$_R,'2014'));
+		}
+	}
+	
 
 step(0,"update_GPD_PP_YR_for_Entity_item");
 print G($dbh->update_GPD_PP_YR_for_Entity_item());

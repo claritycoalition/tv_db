@@ -19,6 +19,8 @@ class DataMapper {
             $stmt = $this->pdo->prepare($sql);
             $sql = "flush tables";
             $stmt = $this->pdo->prepare($sql);
+            $sql = "SET GLOBAL general_log = 1;";
+            $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
         } catch (PDOException $e) {
             var_dump($e);
@@ -640,6 +642,29 @@ EOX;
      * 
      * ******************************************************* */
 
+	
+    public function getResNames() {
+        $sql = "select name from V3_resource;";
+		$names = array();
+        $rs = $this->select($sql);
+		foreach ($rs as $a) {
+			array_push($names, $a['name']);
+		}
+		return($names);
+		
+    }
+    public function getItemNames() {
+        $sql = "select name from V3_item;";
+		$names = array();
+        $rs = $this->select($sql);
+		foreach ($rs as $a) {
+			array_push($names, $a['name']);
+		}
+		return($names);
+		
+    }
+	
+	
     public function getCols($table) {
         $sql = <<<EOX
                 SELECT `COLUMN_NAME` 
@@ -900,10 +925,6 @@ EOX;
                     SELECT
                         AVG(V3_item_resource_stats.unit_gdp) AS cmean,
                         STD(V3_item_resource_stats.unit_gdp) AS cstd,
-                        STDDEV(V3_item_resource_stats.unit_gdp) AS cstddev,
-                        STDDEV_POP(V3_item_resource_stats.unit_gdp) AS cstddev_pop,
-                        STDDEV_SAMP(V3_item_resource_stats.unit_gdp) AS cstddev_samp,
-
                         V3_item_resource_stats.item,
                         V3_item_resource_stats.resource,
                         V3_item_resource_stats.`year`
@@ -926,10 +947,7 @@ EOX;
                 UPDATE V3_item_resource as R, tmp as T 
                     SET 
                         R.res_unit_gdp_mean = T.cmean,
-                        R.res_unit_gdp_std = T.cstd,
-                        R.res_unit_gdp_stddev = T.cstddev,
-                        R.res_unit_gdp_stddev_pop = T.cstddev_pop,
-                        R.res_unit_gdp_stddev_samp = T.cstddev_samp
+                        R.res_unit_gdp_std = T.cstd
                     WHERE
                         T.item = R.item AND
                         T.resource = R.resource AND
