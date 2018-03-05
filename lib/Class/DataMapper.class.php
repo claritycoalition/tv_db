@@ -32,6 +32,57 @@ class DataMapper {
      * 
      * ******************************************************* */
 
+	
+	public function update_d_kg() {
+        $status = "";
+        $this->delTable("tmp");
+		$sql =<<<EOX
+CREATE TABLE tmp SELECT DISTINCT
+			s.con_kg,
+			i.gdp,
+			i.gdp / s.con_kg AS c_d_kg,
+			s.item,
+			s.resource,
+			s.src
+		FROM
+			V3_item_resource_stats AS s
+		INNER JOIN V3_entity_item AS i ON s.item = i.item
+		WHERE
+			s.item = i.item
+		AND i.entity = 'ARGNAT'
+		AND s.resource = '_NP';		
+EOX;
+		
+        $this->debug($sql, "update_d_kg (tmp)");
+        $r = $this->update($sql, "update_d_kg");
+	    $status .= "\tUPDATED [ :: c_d_kg(tmp)\n";
+
+		
+        $sql =<<<EOX
+
+		UPDATE V3_item_resource_stats AS v,
+		 tmp AS t
+		SET v.c_d_kg = t.c_d_kg
+		WHERE
+			v.item = t.item AND 
+		v.resource = t.resource AND
+		v.con_kg = t.con_kg AND
+	v.src = t.src;
+EOX;
+		
+        $this->debug($sql, "update_d_kg ");
+        $r = $this->execute($sql);
+	    $status .= "\tUPDATED [ :: c_d_kg\n";
+		
+		
+		
+		
+		
+		
+        return($status);
+    }
+	
+	
     public function update_Entity_Service() {
         $r;
         $status = "";
@@ -565,6 +616,53 @@ EOX;
 
         $status = "UPDATED projections\n";
         return($status);
+		
+		
+		
+		
+    }    
+	
+	
+	
+	
+	public function update_NC() {
+        
+        $this->delTable("tmp");
+        
+        $sql = <<<EOX
+			create table tmp
+				SELECT DISTINCT
+					a.con_kg + b.con_kg - c.con_kg AS NatCon,
+					a.item,
+					a.src
+				FROM
+					V3_item_resource_stats AS a
+				INNER JOIN V3_item_resource_stats AS b ON a.item = b.item
+				INNER JOIN V3_item_resource_stats AS c ON b.item = c.item
+				WHERE
+					a.resource = '_NP'
+				AND b.resource = 'IMP'
+				AND b.src = 'src-1'
+				AND c.resource = 'EXP'
+				AND c.src = 'src-1'
+
+EOX;
+        $r = $this->execute($sql);
+		
+		
+        $sql = <<<EOX
+			UPDATE V3_item_resource_stats AS v,
+			 tmp AS t
+			SET v.con_kg = t.NatCon
+			WHERE
+				t.item = v.item AND 
+				t.src = v.src 
+EOX;
+		
+        $r = $this->update($sql, "update_NC using IMP/EXP data");
+		
+        $status = "UPDATED V3_item_resource_stats\n";
+        return($status);
     }
 
     /*     * *******************************************************
@@ -923,8 +1021,8 @@ EOX;
         $sql1 = <<<EOX
                 CREATE TABLE tmp AS (
                     SELECT
-                        AVG(V3_item_resource_stats.unit_gdp) AS cmean,
-                        STD(V3_item_resource_stats.unit_gdp) AS cstd,
+                        AVG(V3_item_resource_stats.con_kg) AS cmean,
+                        STD(V3_item_resource_stats.con_kg) AS cstd,
                         V3_item_resource_stats.item,
                         V3_item_resource_stats.resource,
                         V3_item_resource_stats.`year`
@@ -946,8 +1044,8 @@ EOX;
         $sql2 = <<<EOX
                 UPDATE V3_item_resource as R, tmp as T 
                     SET 
-                        R.res_unit_gdp_mean = T.cmean,
-                        R.res_unit_gdp_std = T.cstd
+                        R.mean_con_kg = T.cmean,
+                        R.std_con_kg = T.cstd
                     WHERE
                         T.item = R.item AND
                         T.resource = R.resource AND
@@ -957,11 +1055,167 @@ EOX;
         $r = $this->delTable("tmp");
         $r = $this->update($sql1, "collect averages");
         $r = $this->update($sql2, "update_avg_units");
-        $this->test("select res_unit_gdp_mean from V3_item_resource");
+        $this->test("select mean_con_kg from V3_item_resource");
 
         $status .= "UPDATED [avg]  [V3_item_resource]\n";
 
         return($status);
     }
+ 
+	public function update_avg_d_kg() {
+        $status = "";
+        $sql1 = <<<EOX
+                CREATE TABLE tmp AS (
+                    SELECT
+                        AVG(V3_item_resource_stats.c_d_kg) AS dkg,
+                        V3_item_resource_stats.item
+                    FROM
+                        V3_item_resource_stats
+                    GROUP BY
+                        V3_item_resource_stats.item
+
+                )
+
+                            
+EOX;
+        // "res_kg_gdp" = units, not specifically kg.  this has to be fixed, but not sure how yet
+        $sql2 = <<<EOX
+                UPDATE V3_entity_item as R, tmp as T 
+                    SET 
+                        R.c_d_kg = T.dkg
+                    WHERE
+                        T.item = R.item 
+EOX;
+
+        $r = $this->delTable("tmp");
+        $r = $this->update($sql1, "collect averages");
+        $r = $this->update($sql2, "update_c_d_kg");
+//        $this->test("select mean_con_kg from V3_item_resource");
+
+        $status .= "UPDATED [avg]  [V3_entiyy_items]\n";
+
+        return($status);
+    }
+
+	public function update_con_d_kg() {
+        $status = "";
+        $sql1 = <<<EOX
+                CREATE TABLE tmp AS (
+					SELECT distinct
+					V3_item_resource_stats.con_kg,
+					V3_entity_item.c_d_kg,
+					V3_entity_item.item,
+					V3_item_resource_stats.resource,
+					V3_item_resource_stats.src,
+					V3_item_resource_stats.con_kg * V3_entity_item.c_d_kg as con_d_kg
+					FROM
+					V3_entity_item
+					INNER JOIN V3_item_resource_stats ON V3_entity_item.item = V3_item_resource_stats.item
+					WHERE
+					V3_item_resource_stats.resource = '_NC'
+
+                )
+
+                            
+EOX;
+        $sql2 = <<<EOX
+			UPDATE V3_item_resource_stats AS v,
+			 tmp AS t
+			SET v.con_d_kg = t.con_d_kg
+			WHERE
+				v.item = t.item
+			AND v.resource = t.resource
+			AND v.src = t.src
+EOX;
+
+        $r = $this->delTable("tmp");
+        $r = $this->update($sql1, "collect averages");
+        $r = $this->update($sql2, "update_con_d_kg");
+//        $this->test("select mean_con_kg from V3_item_resource");
+
+        $status .= "UPDATED [avg]  [V3_items_resource_stats]\n";
+
+        return($status);
+    }
+	
+	public function update_tot_diets() {
+        $status = "";
+        $sql1 = <<<EOX
+
+			update  V3_tot_diets 
+			set `src_1` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-1'
+			),
+
+			 `src_2` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-2'
+			),
+
+			 `src_3` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-3'
+			),
+
+			 `src_4` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-4'
+			),
+
+			 `src_5` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-5'
+			),
+
+			 `src_6` = (
+			SELECT
+			sum(V3_item_resource_stats.con_d_kg)
+			FROM
+			V3_item_resource_stats
+			WHERE
+			V3_item_resource_stats.resource = '_NC' AND
+			V3_item_resource_stats.src = 'src-6'
+			)
+EOX;
+        $r = $this->update($sql1, "update V3_tot_diets");
+        $status .= "UPDATED [src_[1-6]]  [V3_tot_diets]\n";
+
+		$sql = "update V3_tot_diets set tot = src_1+src_2+src_3+src_4+src_5+src_6;";
+		$r = $this->update($sql, "update V3_tot_diets::tot");
+		
+		$sql = "update V3_tot_diets set tot = NULL, src_1 = NULL, src_2 = NULL, src_3 = NULL, src_4 = NULL, src_5 = NULL, src_6 = NULL where entity='ECOCHE'";
+		$r = $this->update($sql, "fix update error");
+		
+        $status .= "UPDATED [tot]  [V3_tot_diets]\n";
+
+		return($status);
+    }
+
 
 }

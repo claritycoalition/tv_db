@@ -26,7 +26,7 @@
 
             $(document).ready(function () {
 
-                var items = [
+                var items1 = [
                     ['TST', 0.7187, 0.2046],
                     ['AVO', 0.7187, 0.2046],
                     ['COW', 29.9533, 2.1396],
@@ -34,7 +34,101 @@
                     ['MIL', 0.86, 0.3238],
                     ['PER', 0.655, 0.225],
                     ['WHT', 1466.6667, 124.7219]
+
                 ];
+
+
+                var items2 = [
+                    ['TST', 0.7187, 0.2046],
+                    ['AVO', 11534000.0000, 99186.6927],
+                    ['COW', 2602393666.6667, 153247115.5429],
+                    ['CPE', 5217666.6667, 6251711.9167],
+                    ['MIL', 11006126666.6667, 538398044.8289],
+                    ['PER', 420567833.3333, 33836639.8323],
+                    ['WHT', 6439250333.3333, 3309608916.1103]
+                ];
+
+                var items3 = [
+                    ['AVO',
+
+                        [791,
+                            757,
+                            789,
+                            789,
+                            781,
+                            782
+                        ]
+                    ]
+                ];
+
+                var items4 = [
+
+                    ['AVO',
+                        [   2666918.0000,
+                            2662491.0000,
+                            2676471.0000,
+                            2680898.0000,
+                            2715615.0000,
+                            2722139.0000
+                        ]
+                    ],
+                    ['COW',
+                        [   7327947776.0000,
+                            7330974720.0000,
+                            8284821504.0000
+                        ]
+                    ],
+                    ['CPE',
+                        [   79046856.0000,
+                            10140635.0000,
+                            10446802.0000,
+                            3488452.7500,
+                            45572552.0000,
+                            -3469897.0000
+                        ]
+                    ],
+                    ['MIL',
+                        [   3431598592.0000,
+                            3443742976.0000,
+                            3538675968.0000,
+                            3546917120.0000,
+                            3613697536.0000,
+                            3094873088.0000
+                        ]
+                    ],
+                    ['PER',
+                        [   283836736.0000,
+                            293255680.0000,
+                            304487872.0000,
+                            326371296.0000,
+                            342217888.0000,
+                            353993408.0000
+                        ]
+                    ],
+                    ['WHT',
+                        [
+                            5820256768.0000,
+                            2169214208.0000,
+                            3513444352.0000,
+                            373132736.0000,
+                            3795674624.0000,
+                            4519190016.0000
+                        ]
+                    ],
+                    ['ARGNAT',
+                        [
+                            12050474809.188,
+                            11832716856.719,
+                            11948777350.188,
+                            11990998225.062,
+                            11807640172.5,
+                            12175285652.5 
+                        ]
+        
+                    ]
+                ];
+                var items = items4;
+
 
                 for (var i = 0; i < items.length; i += 1) {
                     var uid = uuidv4();
@@ -45,77 +139,58 @@
                     document.body.appendChild(chartContainer);
 
                     var name = items[i][0];
-                    var mean = items[i][1];
-                    var sdev = items[i][2];
-//                    chartIt(uid, name, mean, sdev);
-                    chartIt(uid, name, mean, sdev, mean, sdev,);
-                    chartIt(uid, name, mean, sdev, 0, 1);
+                    var data = items[i][1];
+                    chartIt(uid, name, data);
                 }
 
 
 
             });
 
+            /* **************************************************************************** */
             function uuidv4() {
                 return 'chartDiv_xxxxxxxx'.replace(/[xy]/g, function (c) {
                     var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
                     return v.toString(16);
                 });
             }
+            /* **************************************************************************** */
+            function NormalDensityZx(x, Mean, StdDev) {
+                var a = x - Mean;
+                return Math.exp(-(a * a) / (2 * StdDev * StdDev)) / (Math.sqrt(2 * Math.PI) * StdDev);
+            }
 
-            function chartIt(chartDiv, itemName, _mean, _stddev, _meanDistVal, _stddevDistVal) {
-
-                var title = itemName + "(" + _mean + "/" + _stddev + ")";
-
-                function NormalDensityZx(x, Mean, StdDev) {
-                    var a = x - Mean;
-                    return Math.exp(-(a * a) / (2 * StdDev * StdDev)) / (Math.sqrt(2 * Math.PI) * StdDev);
+            /* **************************************************************************** */
+            function chartIt(chartDiv, itemName, _data) {
+                
+                var verticals = [];
+                
+                var index;
+                for (index = 0; index < _data.length; ++index) {
+                    verticals[index] = Math.round(_data[index]/1000000);
                 }
 
-                /**
-                 * Calculate data
-                 */
-
-                //var _mean = 0.7187;
-                //var _stddev =  0.2046;
-                //var _min = 0;
-                //var _max = _mean*2;
-
-//    var _mean = 0;
-//    var _stddev = 1;
-                //var _min = -5;
-                //var _max = _mean = 5;
-
-
-//    var _min = _stddev * 0.5;
-//    var _max = _mean * 2;
-
-
-                //kinda works
-                var delta = _mean - _stddev;
-//                var _min = _mean - (delta * 2);// * -1;
-                var _min = _stddev - (delta * 2);// * -1;
-                var _max = _mean + (delta * 2);
-
-
-
-                /**
-                 * Define values where to put vertical lines at
-                 */
-                var verticals = [
-                    //  -1.4, -0.2, 1.2
-                    _mean, _stddev
-                ];
-
+                var _mean = verticals.reduce((a, b) => a + b, 0) / verticals.length;
+                var _stddev = StandardDeviation(verticals);
+                var _min = Math.min(...verticals) - (_mean * .1);
+                var _max = Math.max(...verticals) + (_mean * .1);
+                var title = itemName + "  ( " + _mean + " / " + _stddev + " )";
                 var chartData = [];
-                //for ( var i = -1; i < 1.01; i += 0.01 ) {
-//    for ( var i = -5   ; i < 5.1       ; i += 0.1)               {
-                for (var i = _min; i <= _max; i += (_max - _min) / 100) {
+                var $V = 100;
+
+                console.log("_mean: " + _mean);
+                console.log("_stddev: " + _stddev);
+                console.log("_min: " + _min);
+                console.log("_max: " + _max);
+
+
+
+                for (var i = _min; i <= _max; i += .01) {
                     var dp = {
                         category: i,
-                        value: NormalDensityZx(i, _meanDistVal, _stddevDistVal)
+                        value: NormalDensityZx(i, _mean, _stddev)
                     };
-                    if (verticals.indexOf(Math.round(i * 10000) / 10000) !== -1) {
+                    if (verticals.indexOf(Math.round(i * $V) / $V) !== -1) {
                         dp.vertical = dp.value;
                     }
                     chartData.push(dp);
@@ -128,7 +203,7 @@
                     "type": "serial",
                     "theme": "light",
                     "dataProvider": chartData,
-                    "precision": 2,
+                    "precision": 6,
                     "valueAxes": [{
                             "gridAlpha": 0.2,
                             "dashLength": 0
@@ -166,6 +241,24 @@
                 });
             }
 
+            /* **************************************************************************** */
+            function StandardDeviation(numbersArr) {
+                //--CALCULATE AVAREGE--
+                var total = 0;
+                for (var key in numbersArr)
+                    total += numbersArr[key];
+                var meanVal = total / numbersArr.length;
+                //--CALCULATE AVAREGE--
+
+                //--CALCULATE STANDARD DEVIATION--
+                var SDprep = 0;
+                for (var key in numbersArr)
+                    SDprep += Math.pow((parseFloat(numbersArr[key]) - meanVal), 2);
+                var SDresult = Math.sqrt(SDprep / numbersArr.length);
+                //--CALCULATE STANDARD DEVIATION--
+//    alert(SDresult);
+                return(SDresult);
+            }
         </script>
 
 

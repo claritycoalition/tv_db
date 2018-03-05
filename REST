@@ -1,4 +1,4 @@
 #!/bin/bash
 D=`cat lastsave`
-mysql -uroot  clarity < sql/${D}
-echo "Restored sql/`cat lastsave`"
+mysql -uroot  clarity < ${D}
+echo "Restored `cat lastsave`"

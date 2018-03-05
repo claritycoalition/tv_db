@@ -3,7 +3,9 @@
 #mysql -uSpartacus -pholo3601q2w3e -e "DROP database clarity"
 #mysql -uSpartacus -pholo3601q2w3e -e "CREATE database clarity"
 mysql -uSpartacus -pholo3601q2w3e -e "SET GLOBAL general_log = 0"
-mysql -uSpartacus -pholo3601q2w3e clarity < sql/clarity_min9.sql
+
+#mysql -uSpartacus -pholo3601q2w3e clarity < sql/clarity_min9.2_noopt.sql
+mysql -uSpartacus -pholo3601q2w3e clarity < `cat lastsave`
 
 sudo find  /var/lib/mysql/clarity -name "*.csv" -exec sudo rm {} \;
 sudo php ./read.php
